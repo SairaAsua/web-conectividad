@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { posts, timeline, stack, siteInfo, stats, partners, videos, redesAcompanadas, equipo } from "@/lib/data";
+import { posts, timeline, stack, siteInfo, partners, videos } from "@/lib/data";
 
 export default function HomePage() {
   const recentPosts = posts.slice(0, 3);
@@ -44,8 +43,6 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 grid grid-cols-1 max-w-4xl" style={{ zIndex: 3 }}>
           {/* Text */}
           <div>
-            
-
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] text-white mb-6">
               Hacemos{" "}
               <span className="gradient-celeste">Internet</span>
@@ -54,9 +51,7 @@ export default function HomePage() {
               <span className="gradient-verde">comunidades.</span>
             </h1>
 
-            
-
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mt-8">
               <Link href="/redes" className="btn-primary">
                 Explorar el Stack
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -82,15 +77,12 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-
-          </div>
+        </div>
 
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
           style={{ background: "linear-gradient(to bottom, transparent, #f5f5f0)", zIndex: 4 }} />
       </section>
-
-      
 
       {/* ══════════════════════════════════════════════
           STACK TECNOLÓGICO
@@ -99,7 +91,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="section-title">El stack completo</h2>
-            
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -152,144 +143,14 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          ¿QUÉ ES UNA RED COMUNITARIA?
-      ══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              
-              <h2 className="section-title">No es &ldquo;internet gratis&rdquo;.<br />Es soberanía tecnológica.</h2>
-              
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {[
-                  { label: "Propiedad colectiva", icon: "🏘️" },
-                  { label: "Gestión social", icon: "🤝" },
-                  { label: "Diseño accesible", icon: "🔧" },
-                  { label: "Participación abierta", icon: "🌐" },
-                ].map((item) => (
-                  <div key={item.label} className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100">
-                    <span className="text-2xl">{item.icon}</span>
-                    <span className="text-sm font-semibold text-gray-700">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-              <Link href="/redes" className="btn-green">
-                Aprender más sobre redes comunitarias
-              </Link>
-            </div>
-            <div className="space-y-4">
-              <div className="field-card">
-                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#00b4d8" }}>🏔️ Caso real — José de la Quintana, Córdoba</p>
-                <p className="text-gray-700 font-semibold">QuintanaLibre conecta más de <span style={{ color: "#38b000" }}>70 familias</span> y mantiene un enlace de <span style={{ color: "#38b000" }}>15 km</span> a una localidad sin señal, gestionado por la propia comunidad hace más de <span style={{ color: "#38b000" }}>13 años</span>.</p>
-              </div>
-              <div className="field-card" style={{ borderLeftColor: "#38b000" }}>
-                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#38b000" }}>📡 Red FOQSI — Quintana y San Isidro</p>
-                <p className="text-gray-700 font-semibold">Red de fibra óptica comunitaria en despliegue, financiada por APC. Con talleres gratuitos para mujeres y jóvenes, combinando WiFi y FTTH.</p>
-              </div>
-              <div className="field-card" style={{ borderLeftColor: "#f4a900" }}>
-                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#f4a900" }}>🏛️ Política pública</p>
-                <p className="text-gray-700 font-semibold">AlterMundi contribuyó a la aprobación del primer programa nacional que financia redes comunitarias mediante el Fondo de Servicio Universal.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          REDES ACOMPAÑADAS
-      ══════════════════════════════════════════════ */}
-      <section className="py-24" style={{ background: "#f5f5f0" }}>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            
-            <h2 className="section-title">Redes comunitarias reales</h2>
-            
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {redesAcompanadas.map((red) => (
-              <div key={red.name} className="card p-6 group hover:shadow-xl transition-all">
-                <div className="flex items-start justify-between mb-4">
-                  <span className="text-3xl">{red.icon}</span>
-                  <span className="text-xs font-bold px-2 py-1 rounded-full"
-                    style={{ background: `${red.color}15`, color: red.color }}>
-                    LibreRouter
-                  </span>
-                </div>
-                <h3 className="font-black text-lg mb-1" style={{ color: red.color }}>{red.name}</h3>
-                <p className="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-widest">{red.loc}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{red.desc}</p>
-                {(red.video || red.link) && (
-                  <a
-                    href={red.video || red.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-bold inline-flex items-center gap-1"
-                    style={{ color: red.color }}
-                  >
-                    {red.video ? "▶ Ver documental" : "→ Ver más"}
-                  </a>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/redes" className="btn-green">Ver todas las redes →</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          TIMELINE HISTÓRICO
-      ══════════════════════════════════════════════ */}
-      <section className="py-24" style={{ background: "var(--azul-noche)" }}>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="section-title section-title-dark">Años de compromiso y trabajo</h2>
-            
-          </div>
-
-          <div className="relative">
-            {/* Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px" style={{ background: "linear-gradient(to bottom, #00b4d8, #38b000, #f4a900)" }} />
-
-            <div className="space-y-8">
-              {timeline.map((item, i) => {
-                const color = item.color === "celeste" ? "#00b4d8" : item.color === "verde" ? "#38b000" : "#f4a900";
-                const isRight = i % 2 === 0;
-                return (
-                  <div key={item.year} className={`relative flex items-center gap-8 ${isRight ? "md:flex-row" : "md:flex-row-reverse"} pl-12 md:pl-0`}>
-                    {/* Dot */}
-                    <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center z-10 text-sm font-black"
-                      style={{ background: color, color: "white", boxShadow: `0 0 20px ${color}60` }}>
-                    </div>
-
-                    {/* Content */}
-                    <div className={`md:w-1/2 ${isRight ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                      <div className="card-dark p-5 inline-block text-left">
-                        <span className="text-2xl font-black block mb-1" style={{ color }}>{item.year}</span>
-                        <p className="text-gray-300 text-sm leading-relaxed">{item.event}</p>
-                      </div>
-                    </div>
-                    <div className="hidden md:block md:w-1/2" />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
           I+D ACTUAL
       ══════════════════════════════════════════════ */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              
               <h2 className="section-title">Laboratorio de redes mesh</h2>
-              
+
               {/* ASN data */}
               <div className="terminal mb-6">
                 <span className="terminal-comment"># AlterMundi opera infraestructura real</span>{"\n"}
@@ -346,9 +207,7 @@ export default function HomePage() {
       <section className="py-24" style={{ background: "#f5f5f0" }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            
             <h2 className="section-title">Comunidades haciendo Internet</h2>
-            
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {videos.map((v) => (
@@ -398,7 +257,6 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-12">
             <div>
               <h2 className="section-title mb-1">Últimas novedades</h2>
-              
             </div>
             <Link href="/blog" className="btn-secondary hidden md:inline-flex text-sm">
               Ver todo →
@@ -433,7 +291,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="section-title">Alianzas que hacen posible el trabajo</h2>
-            
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             {partners.map((p) => (
@@ -456,44 +313,52 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          EQUIPO
+          TIMELINE HISTÓRICO (Desplegable al final)
       ══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white">
+      <section className="py-24" style={{ background: "var(--azul-noche)" }}>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="section-title">El equipo detrás</h2>
-            
-          </div>
-          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-            {equipo.map((persona) => (
-              <div key={persona.name} className="card p-8 flex gap-6 items-start">
-                <div className="shrink-0">
-                  {persona.photo ? (
-                    <img src={persona.photo} alt={persona.name} className="w-20 h-20 rounded-full object-cover" />
-                  ) : (
-                    <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl"
-                      style={{ background: "linear-gradient(135deg, #00b4d8, #38b000)" }}>
-                      👤
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <h3 className="font-black text-xl mb-1" style={{ color: "#00b4d8" }}>{persona.name}</h3>
-                  <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">{persona.role}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{persona.bio}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {persona.links.map((l) => (
-                      <a key={l.label} href={l.url} target="_blank" rel="noopener noreferrer"
-                        className="text-xs font-bold px-3 py-1 rounded-full border"
-                        style={{ color: "#00b4d8", borderColor: "#00b4d820" }}>
-                        {l.label} ↗
-                      </a>
-                    ))}
+          <details className="group marker:content-['']">
+            <summary className="text-center cursor-pointer list-none outline-none">
+              <div className="inline-flex flex-col items-center gap-3 opacity-90 hover:opacity-100 transition-opacity">
+                <h2 className="text-3xl font-black text-white hover:text-[#00b4d8] transition-colors m-0 flex items-center gap-3">
+                  13 Años de compromiso y trabajo
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-open:rotate-180 transition-transform duration-300">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M6 9l6 6 6-6" /></svg>
                   </div>
-                </div>
+                </h2>
+                <p className="text-gray-400 text-sm mt-2 font-medium">Click para expandir el timeline histórico completo</p>
               </div>
-            ))}
-          </div>
+            </summary>
+
+            <div className="relative mt-20 pb-4">
+              {/* Line */}
+              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px" style={{ background: "linear-gradient(to bottom, #00b4d8, #38b000, #f4a900)" }} />
+
+              <div className="space-y-8">
+                {timeline.map((item, i) => {
+                  const color = item.color === "celeste" ? "#00b4d8" : item.color === "verde" ? "#38b000" : "#f4a900";
+                  const isRight = i % 2 === 0;
+                  return (
+                    <div key={item.year} className={`relative flex items-center gap-8 ${isRight ? "md:flex-row" : "md:flex-row-reverse"} pl-12 md:pl-0`}>
+                      {/* Dot */}
+                      <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center z-10 text-sm font-black"
+                        style={{ background: color, color: "white", boxShadow: `0 0 20px ${color}60` }}>
+                      </div>
+
+                      {/* Content */}
+                      <div className={`md:w-1/2 ${isRight ? "md:text-right md:pr-12" : "md:pl-12"}`}>
+                        <div className="card-dark p-5 inline-block text-left relative overflow-hidden group">
+                          <span className="text-2xl font-black block mb-1 relative z-10" style={{ color }}>{item.year}</span>
+                          <p className="text-gray-300 text-sm leading-relaxed relative z-10">{item.event}</p>
+                        </div>
+                      </div>
+                      <div className="hidden md:block md:w-1/2" />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -502,14 +367,14 @@ export default function HomePage() {
       ══════════════════════════════════════════════ */}
       <section className="py-20" style={{ background: "#0a1628" }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">¿Querés armar tu red comunitaria?</h2>
-          
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-8">¿Querés armar tu red comunitaria?</h2>
+
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/formacion" className="btn-primary">Ver Formación y Acompañamiento</Link>
             <a href={siteInfo.forum} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ borderColor: "rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.7)" }}>
               Entrar al Foro ↗
             </a>
-            <Link href="/contacto" className="btn-yellow">Contactar</Link>
+            <Link href="/contacto" className="btn-yellow">Contactar a AlterMundi</Link>
           </div>
         </div>
       </section>
