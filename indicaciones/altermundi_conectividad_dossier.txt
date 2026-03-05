@@ -1,0 +1,746 @@
+# Dossier integral para rehacer la web de AlterMundi (Conectividad, Redes Comunitarias, LibreMesh + LibreRouter)
+**Fecha de compilación:** 2026-03-01  
+**Alcance:** SOLO conectividad / redes comunitarias / LibreRouter / LibreMesh / LimeApp / formación / incidencia / alianzas vinculadas a conectividad.  
+**Para usar:** este documento está pensado para que un generador (Claude) pueda producir la web **sin intervención humana**. Incluye: narrativa, estructura de sitio, copy sugerido, lista de proyectos, repositorios, documentación, videos, timeline, socios, redes acompañadas y checklist de assets.
+
+---
+
+## Instrucciones para Claude (LEER ANTES DE GENERAR LA WEB)
+1. **Tono:** cercano, político-técnico, desde el territorio. “Co-creamos internet”. Enfatizar autonomía, soberanía tecnológica, aprendizaje colectivo y trabajo sostenido.  
+2. **No inventar:** si algo está marcado como “(PENDIENTE)” o “(A confirmar)”, dejarlo como placeholder o pedir el dato al usuario.  
+3. **Evitar secciones no conectividad:** no incluir otros proyectos fuera de conectividad (IoT, IA, etc.) salvo que sea estrictamente apoyo a redes (p.ej. monitoreo de red).  
+4. **Prioridad narrativa:** 
+   - 1) Comunidades (redes reales, nombres, historias)  
+   - 2) Tecnología libre (LibreMesh/LibreRouter/LimeApp)  
+   - 3) Incidencia (regulación/licencias/fondos/ONU/UIT)  
+   - 4) Formación (Semilleros, FOQSI, talleres)  
+   - 5) Alianzas (UNC, INTI, ARDC, APC, etc.)  
+5. **Resultado esperado:** una web moderna, accesible, con pruebas de “años de trabajo” (timeline, cifras, red de aliados, documentación, repositorios, videos).
+
+---
+
+# 1) Estructura sugerida del sitio (Sitemap)
+## Menú principal
+- **Inicio**
+- **Qué son las redes comunitarias**
+- **Tecnología**
+  - LibreRouter
+  - LibreMesh
+  - LimeApp
+  - Foro / Soporte
+- **Redes acompañadas**
+  - Mapa / listado de redes
+  - Historias destacadas
+- **Formación**
+  - Semillero Roberto Arias (ENACOM)
+  - Talleres (WiFi, fibra, montaje, planificación)
+  - FOQSI (Fibra Óptica Quintana–San Isidro)
+- **Incidencia y gobernanza**
+  - Licencias (VARC / RUPECO)
+  - CARC (Cumbre Argentina de Redes Comunitarias)
+  - Participación global (ONU/IGF, UIT-D, etc.)
+- **Documentación**
+- **Videos**
+- **Alianzas / Socios**
+- **Contacto**
+
+## Páginas “de apoyo” (footer)
+- Licencias (CC BY-SA del sitio)
+- Privacidad / términos (si aplica)
+- Donar / apoyar (si existe)
+- Repositorios / comunidad dev
+- Prensa
+
+---
+
+# 2) Identidad narrativa y copy base (listo para usar)
+## Taglines posibles (elegir 1)
+- **“AlterMundi: co-creamos internet desde los territorios.”**
+- **“Conectividad como derecho, tecnología como herramienta comunitaria.”**
+- **“Redes comunitarias + tecnología libre para construir soberanía tecnológica.”**
+
+## Manifesto breve (copy sugerido)
+> AlterMundi es una asociación civil argentina que acompaña a comunidades a crear y sostener sus propias redes de internet. Diseñamos y desarrollamos tecnología libre —software y hardware abierto— para que la conectividad no dependa de soluciones cerradas ni de modelos que excluyen. Creemos en el aprendizaje colectivo, la autonomía y el derecho a comunicarnos. Co-creamos internet, pedacito a pedacito, con redes comunitarias reales.
+
+**Evidencias / anclajes públicos para reforzar el manifiesto:**
+- AlterMundi obtuvo la **primera licencia de operador de redes comunitarias** en Argentina (ENACOM). (Fuente: https://altermundi.net/2018/12/20/altermundi-obtiene-licencia-de-operador-de-red-comunitaria-de-internet-en-argentina/)  
+- **QuintanaLibre** (José de la Quintana, Córdoba) conecta a **más de 70 familias**, narrado en documental. (Fuente video: https://www.youtube.com/watch?v=DcOAePVwafs)  
+- En Argentina, **más de 20 redes comunitarias** usan LibreRouter/LibreMesh, alcanzando **>13.500 personas** (dato ARDC). (Fuente: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/)  
+
+---
+
+# 3) Historia y timeline (orígenes → hoy)
+> Objetivo: mostrar continuidad, acumulación de saberes, evolución técnica y social.
+
+## 2010–2012 | Semillas (redes libres, comunidad, primeras experiencias)
+- Formación y movimiento de software libre y redes libres (antecedentes del equipo; ver trayectoria de Jésica Giudice).  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+- 2012: se relata el inicio del camino que conecta la historia de AlterMundi, QuintanaLibre y el modelo multiradio mesh (mencionado como “febrero 2012, QuintanaCamp”).  
+  Fuente: https://altermundi.net/2018/11/01/librerouter-fase-ii/
+
+## 2013–2015 | Despliegues, talleres, consolidación organizativa
+- Talleres intensivos, construcción de nodos y despliegues comunitarios (p.ej. Nono, La Bolsa, Quilpo, etc. listados en trayectoria).  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+- 2015: se menciona el proceso de formalización de la asociación civil (personería jurídica 2015, según trayectoria).  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+- 2015: se describen actividades de desarrollo y pruebas de LibreMesh y despliegues con comunidades (timeline 2015).  
+  Fuente: https://altermundi.net/2015/12/04/timeline-april-november-2015/
+
+## 2016–2018 | LibreRouter, redes comunitarias y reconocimiento regional
+- LibreRouter como proyecto de router multiradio mesh para redes comunitarias (fase II; grant ISOC Beyond the Net; objetivos de soporte remoto y tablero).  
+  Fuente: https://altermundi.net/2018/11/01/librerouter-fase-ii/
+- 2018: Cumbre Latinoamericana de Redes Comunitarias (articulación regional, declaración/documento final).  
+  Fuente: https://altermundi.net/2018/11/14/cumbre-latinoamericana-de-redes-comunitarias/  
+  Documentos finales: (ver enlaces dentro del post; en cnsig.info)
+- 2018: AlterMundi obtiene la primera licencia como operador de red comunitaria en Argentina (ENACOM).  
+  Fuente: https://altermundi.net/2018/12/20/altermundi-obtiene-licencia-de-operador-de-red-comunitaria-de-internet-en-argentina/
+
+## 2019 | Homologación + CARC + escalamiento
+- 2019: LibreRouter homologado en Argentina; participación de INTI e ITon.  
+  Fuente: https://altermundi.net/2019/09/12/librerouter-ya-esta-homologado-en-argentina/
+- 2019: 1ra Cumbre Argentina de Redes Comunitarias (CARC). Piloto mesh con 3 LibreRouters, taller de fibra óptica, estreno documental, declaración conjunta.  
+  Fuente: https://altermundi.net/2020/01/18/cumbre-argentina-de-redes-comunitarias-internet-desde-los-territorios/
+
+## 2020–2022 | Semilleros, pandemia, expansión a nuevas redes, documentales
+- 2020: aparecen nuevas redes y se visibiliza crecimiento (lista pública de redes nuevas: LibreGrandeNet, Los Molinos Comunitaria, Río Los Sauces, MonteNet, etc.).  
+  Fuente: https://altermundi.net/2020/09/29/nuevas-redes/
+- Documental “Comunidades haciendo Internet – Experiencia QuintanaLibre” (capítulo 1).  
+  Video: https://www.youtube.com/watch?v=DcOAePVwafs  
+  Post de presentaciones (2019): https://altermundi.net/2019/12/29/presentando-comunidades-haciendo-internet-experiencia-quintanalibre-el-documental-donde-las-y-los-protagonistas-hablan-en-voz-propia/
+- Documental “Comunidades Haciendo Internet – Nuevas Redes” (2021).  
+  Video: https://www.youtube.com/watch?v=fnHJfDJwEiY  
+  Nota/eco: https://nueva.radioslibres.net/comunidades-haciendo-internet-nuevas-redes/
+- 2022: Semillero para postulantes al Programa Roberto Arias (ENACOM); 16 comunidades / 9 provincias (según post).  
+  Fuente: https://altermundi.net/2022/05/21/ya-arrancamos-con-el-semillero-de-redes-comunitarias-para-postulantes-al-roberto-arias/
+- 2022: página de videos del Semillero 2022 (curaduría lista, ideal para sección “Videos”).  
+  Fuente: https://altermundi.net/2022/09/16/videos-semillerorc22/
+
+## 2023–2024 | ONU/UIT, ARDC, FOQSI (fibra), investigación técnica (Hidden Nodes)
+- 2023: participación en la UIT-D (Unión Internacional de Telecomunicaciones – agencia especializada de la ONU).  
+  Fuente: https://altermundi.net/2023/05/15/altermundi-en-la-union-internacional-de-telecomunicaciones-uit-d/  
+  (En trayectoria de Jésica se listan paneles y participación en ITU SG1.) Fuente: https://altermundi.net/trayectoria_giudice/
+- 2024: progreso técnico del proyecto apoyado por ARDC (APuP, Shared-State mesh-wide, LimeApp UI).  
+  Fuente: https://altermundi.net/2024/08/01/revolucionando-las-redes-mesh-con-tecnologias-de-codigo-abierto-un-vistazo-al-progreso-del-proyecto-apoyado-por-a-r-d-c/  
+  ARDC grant: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/
+- 2024 (impacto reportado por ARDC): el proyecto se reporta con impacto en múltiples continentes y miles de personas; en Argentina **>20 redes comunitarias** usan LibreRouter/LibreMesh alcanzando **>13.500 personas**; además se menciona que la **Universidad Nacional de Córdoba** incorporó el proyecto en su currícula, formando **56 estudiantes** de ingeniería (según grant report).  
+  Fuente: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/
+- 2024: Red FOQSI (Fibra Óptica Quintana–San Isidro) en marcha: formación, interconexión, acuerdos con cooperativa, financiamiento APC.  
+  Fuente: https://altermundi.net/2024/10/15/foqsi/
+- 2024: Taller “Conectando futuros” (WiFi + fibra) coordinado por AlterMundi y FOQSI, orientado a jóvenes y especialmente mujeres (financiamiento APC; apoyo Cooperativa de Anisacate).  
+  Fuente: https://altermundi.net/2024/10/15/conectando-futuros/
+- 2024: desafío técnico “Hidden Nodes” (nodos ocultos) en redes inalámbricas y exploración de soluciones.  
+  Fuente: https://altermundi.net/2024/12/01/hidden-nodes/
+
+---
+
+# 4) Qué hace AlterMundi en conectividad (propuesta de “Qué hacemos”)
+## 4.1 Acompañamiento integral a redes comunitarias
+- Diseño participativo, planificación y despliegue técnico-social.
+- Formación de formadores y talleres de construcción/instalación.
+- Soporte, diagnóstico y administración (herramientas locales y comunitarias).
+- Documentación pública (cuadernillos, instructivos, videos).
+- Incidencia regulatoria y articulación con instituciones públicas.
+
+**Fuente base para documentación y metodología:**  
+- Documentación general: https://altermundi.net/documentacion/  
+- Documentación en inglés: https://altermundi.net/documentation/  
+- Documentación en portugués: https://altermundi.net/documentacao/
+
+## 4.2 Desarrollo de tecnología libre (software + hardware abierto)
+### LibreRouter
+Router multi-radio para redes mesh comunitarias.  
+- Website: https://librerouter.org (⚠️ puede estar intermitente)  
+- Foro/soporte comunitario: https://foro.librerouter.org/  
+- Certificación/homologación en Argentina: https://altermundi.net/2019/09/12/librerouter-ya-esta-homologado-en-argentina/  
+- Fase II y soporte remoto/tablero: https://altermundi.net/2018/11/01/librerouter-fase-ii/
+
+### LibreMesh
+Firmware/OS basado en OpenWrt para redes mesh comunitarias (auto-configurable y modular).  
+- Descargas: https://downloads.libremesh.org/  
+- Desarrollo (docs): https://libremesh.org/development.html  
+- Repos principales: 
+  - https://github.com/libremesh/lime-packages  
+  - https://github.com/libremesh/lime-app  
+  - https://github.com/libremesh (org completa)
+- Dato técnico relevante: se listan módulos de “shared-state” y soporte de LimeApp dentro de paquetes LibreMesh.  
+  Fuente (docs): https://libremesh.org/es_development.html
+
+### LimeApp (dos cosas distintas: webapp + app Android)
+1) **LimeApp web (en el router / en LibreMesh):**  
+   - Se presenta como herramienta local para medir, diagnosticar y administrar una red comunitaria sin internet.  
+   - En docs: “Usar LimeApp 1.4” (link desde documentación).  
+     Fuente índice docs: https://altermundi.net/documentacion/
+2) **Android “network capability app” (GSoC 2021, Freifunk/AlterMundi):**  
+   - Repo: https://github.com/Patacon13/LibreMesh-app  
+   - Descripción y compilación: https://patacon13.github.io/LimeApp/  
+   - Contexto: Google Summer of Code 2021 (ver link en la página).
+
+---
+
+## 4.3 Operar Internet “de verdad”: ASN propio y operación de red
+> Esto es un argumento fuerte para la narrativa “vinimos a cambiar internet”: no es sólo uso de servicios, es **operación de infraestructura y numeración**.
+
+- AlterMundi figura con un **ASN propio: AS264607** (registro LACNIC; responsable Nicolás Echániz aparece en WHOIS).  
+  Fuente (agregador de WHOIS): https://whois.ipinsight.io/AS264607  
+- En la web nueva se puede explicar (muy simple):
+  - Qué es un ASN y por qué importa (autonomía, ruteo, soberanía, operar “pedacitos” de internet).
+  - Cómo se vincula con el convenio/infraestructura de conectividad con UNC (ver sección de alianzas).  
+
+
+# 5) Tecnología explicada (para una sección web “Cómo funciona”)
+## 5.1 Modelo de red comunitaria mesh multi-radio (explicación)
+**Idea:** cada nodo es de la comunidad, y la red crece agregando nodos conectados entre sí por radio o cable, compartiendo el tráfico y la administración.
+
+**Elementos que se pueden explicar con diagramas:**
+- **Nodo** (LibreRouter u otro equipo compatible)  
+- **Enlaces** (WiFi punto a punto, mesh, y backhaul)  
+- **Gateway** / salida a internet (compartida o acordada)  
+- **Servicios locales** (comunidad puede alojar cosas)  
+- **Gestión** (LimeApp; soporte comunitario; métricas)
+
+## 5.2 Tres innovaciones técnicas a destacar (con fuentes públicas)
+1) **APuP mode** (avances integrados/propuestos a OpenWrt):  
+   - Se indica que fue enviado y aprobado en OpenWrt (en el progreso ARDC).  
+   Fuente: https://altermundi.net/2024/08/01/revolucionando-las-redes-mesh-con-tecnologias-de-codigo-abierto-un-vistazo-al-progreso-del-proyecto-apoyado-por-a-r-d-c/
+2) **Shared-State “mesh-wide”** (estado compartido a escala de la malla):  
+   - Reescritura con coroutines C++20 (según post ARDC).  
+   Fuente: mismo link anterior.
+3) **LimeApp UI** (modernización de interfaz):  
+   - Parte de la evolución del proyecto ARDC; y como herramienta de diagnóstico local.  
+   Fuente: post ARDC + docs (https://altermundi.net/documentacion/)
+
+## 5.3 Línea de investigación: “Hidden Nodes”
+**Qué es:** un problema típico de redes inalámbricas donde nodos que no “se escuchan” entre sí colisionan y degradan rendimiento.  
+- AlterMundi describe el desafío y la falta de implementaciones open-source efectivas (RTS/CTS, TDMA, etc.).  
+  Fuente: https://altermundi.net/2024/12/01/hidden-nodes/
+
+---
+
+# 6) Documentación pública (TODO LO RELEVANTE PARA LA WEB)
+> Importante: en la web nueva conviene NO replicar toda la documentación, sino **curarla y enlazarla** (para mantener una sola fuente de verdad).
+
+## 6.1 Hub principal de documentación (ES/EN/PT)
+- ES: https://altermundi.net/documentacion/  
+- EN: https://altermundi.net/documentation/  
+- PT: https://altermundi.net/documentacao/
+
+## 6.2 Índice de materiales (según hub de docs)
+### A) Redes libres, comunitarias y descentralizadas
+- Nuestro pedacito de Internet  
+- Redes libres, comunitarias y descentralizadas  
+- Proyecto LibreRouter: una comunidad para tu red  
+- Una red en tu comunidad  
+(Links están dentro del hub: https://altermundi.net/documentacion/)
+
+### B) Planificación de una red
+- Analizar la comunidad  
+- Organizar la acción  
+- Pensar el financiamiento  
+- Ordenar la administración  
+- Planificar el despliegue  
+(Links en hub)
+
+### C) Mapeo participativo
+- El croquis individual  
+- El mapa colectivo  
+- ¡Manos a las pinzas!  
+- Resultados esperados  
+- + video  
+(Links en hub)
+
+### D) Primeros pasos con LibreRouter
+- Cómo es (partes y conectores)  
+- Conectar (primeras conexiones)  
+- Configurar (crear red o sumarse a red existente)  
+- Montar un nodo (video paso a paso)  
+- Usar LimeApp 1.4 (medir/diagnosticar/administrar red sin internet)  
+- Problemas y Soluciones  
+(Links en hub)
+
+### E) Foro
+- Foro LibreRouter (soporte, experiencias, howtos): https://foro.librerouter.org/  
+  Categorías visibles: Ayuda / Help / HowTo / Compartir / Developer announces, etc.
+
+## 6.3 Guías regulatorias / políticas públicas (muy relevantes para redes comunitarias en Argentina)
+- Licencia VARC: https://altermundi.net/como-solicitar-una-licencia-varc-de-redes-comunitarias/  
+- Registro RUPECO: https://altermundi.net/como-solicitar-el-registro-en-el-rupeco/  
+- Programa Roberto Arias (ENACOM): https://altermundi.net/programa-roberto-arias-de-enacom-caracteristicas-y-requisitos/  
+
+---
+
+# 7) Repositorios y ecosistema de código (lista para sección “Tecnología → Código”)
+## 7.1 Repos principales (oficiales)
+- Org LibreMesh (GitHub): https://github.com/libremesh  
+- LibreMesh packages (repo central): https://github.com/libremesh/lime-packages  
+- LimeApp web (repo): https://github.com/libremesh/lime-app  
+- GitLab LibreRouter (grupo): https://gitlab.com/librerouter  
+(Fuente de links agrupados: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/)
+
+## 7.2 Descargas / releases (para CTA “Descargar firmware”)
+- Descargas LibreMesh: https://downloads.libremesh.org/  
+  (ej. release “LibreMesh 2024.1” referenciado allí)
+
+## 7.3 Piezas técnicas destacables para mostrar (para público técnico)
+- “lime-app” paquete y dependencias (webapp en el router):  
+  https://libremesh.org/packages/lime-app.html  
+  (apunta a https://github.com/libremesh/lime-app)
+- “soporteremoto” (soporte remoto vía SSH/ZeroTier con llaves autorizadas para soporte AlterMundi):  
+  https://libremesh.org/packages/soporteremoto.html  
+- “altermundi-grafana” (metapaquete para estadísticas → grafana.altermundi.net):  
+  https://libremesh.org/packages/altermundi-grafana.html  
+- “lime-eth-config” (config ethernet para LimeApp; créditos INTI/AlterMundi 2025):  
+  https://libremesh.org/packages/lime-eth-config.html  
+
+> Nota web: estas piezas pueden ir en un bloque “Para desarrolladorxs” con enlaces, sin explicar todo.
+
+---
+
+# 8) Redes acompañadas (listado público — incompleto sin la base interna)
+⚠️ **Limitación actual:** no se pudo acceder al Drive “data base” desde esta sesión, así que el listado de redes es el que aparece en fuentes públicas.  
+➡️ **Recomendación para completar:** exportar/pegar el listado de redes del Drive (CSV/Sheet) y reemplazar esta sección por la lista completa.
+
+## 8.1 Redes emblemáticas (para historias destacadas)
+- **QuintanaLibre** (José de la Quintana, Córdoba): más de 70 familias conectadas; documental.  
+  Video: https://www.youtube.com/watch?v=DcOAePVwafs  
+  Post: https://altermundi.net/2019/12/29/presentando-comunidades-haciendo-internet-experiencia-quintanalibre-el-documental-donde-las-y-los-protagonistas-hablan-en-voz-propia/
+- **FOQSI** (Fibra Óptica Quintana–San Isidro): red de fibra comunitaria/regional en marcha; formación; acuerdos con cooperativa; financiamiento APC.  
+  Post: https://altermundi.net/2024/10/15/foqsi/  
+  Taller WiFi+Fibra: https://altermundi.net/2024/10/15/conectando-futuros/
+- **Red Comunitaria Traslasierra / CTO-UTR** (mencionada en conversatorios y trayectoria; clave para semilleros).  
+  Referencias: ver trayectoria + conversatorio:  
+  - https://altermundi.net/trayectoria_giudice/  
+  - https://altermundi.net/2021/07/15/conversatorio-julio/
+- **Red Comunitaria de Amblayo** (Salta): aparece en nota Télam (por redes rurales).  
+  Referencia: https://altermundi.net/2022/12/11/la-agencia-telam-tomando-el-tema-redes-comunitarias-altermundi-y-librerouter/
+
+## 8.2 Redes listadas públicamente como “nuevas redes” (2020) — usar para mapa/listado
+Fuente: https://altermundi.net/2020/09/29/nuevas-redes/  
+- LibreGrandeNet  
+- Los Molinos Comunitaria  
+- Río Los Sauces  
+- MonteNet  
+- RedVuelta  
+- Comunidad Río Salado  
+- Red Perilagos  
+- Internet Comunitario Rinconada  
+- Gallinato Libre  
+- Lesser Libre  
+
+## 8.3 Redes que aparecen en el documental “Nuevas Redes” (2021)
+Fuente: descripción del video + nota Radios Libres  
+- GranjaLibre  
+- MolinosComunitaria  
+- Montenet  
+- LibreGrandeNet  
+- ElValleReinicia  
+Video: https://www.youtube.com/watch?v=fnHJfDJwEiY  
+Nota: https://nueva.radioslibres.net/comunidades-haciendo-internet-nuevas-redes/
+
+## 8.4 Redes y organizaciones mencionadas en posts 2024 (para actualizar el mapa)
+- Tierra Fértil (Palma Sola, Jujuy): proyecto con LibreRouter; alianza local.  
+  Fuente: https://altermundi.net/2024/05/21/construyendo-conectividad-comunitaria-usando-librerouter/
+- Construyendo Dignidad (Córdoba): experiencia de conectividad comunitaria con LibreRouter.  
+  Fuente: https://altermundi.net/2024/05/21/construyendo-conectividad-comunitaria-usando-librerouter/
+
+---
+
+## 8.5 Otros despliegues, territorios y organizaciones mencionadas (para NO dejar afuera)
+**Fuente principal:** https://altermundi.net/trayectoria_giudice/  
+> Esta lista sirve para completar el mapa y la sección “Redes acompañadas”. No reemplaza el “data base” interno.
+
+### Redes / despliegues / lugares (selección amplia)
+- **Villa Ciudad Parque (Córdoba):** encuentro de debate y despliegue; representantes de 12 organizaciones montaron e interconectaron 4 nodos en un día (2022).  
+- **Barrio Yapeyú (Córdoba):** taller de construcción de nodos y despliegue para la organización La Poderosa (2021).  
+- **Isla Maciel (CABA):** taller de construcción de nodos y despliegue para La Poderosa (2021).  
+- **Nodo de montaña Villa Ciudad de América (Córdoba):** tareas de despliegue/mantenimiento (2020).  
+- **Nono (Córdoba):** taller y despliegue; se reportan 42 nodos construidos en 3 días (2015).  
+- **La Bolsa (Córdoba):** taller y despliegue (2015).  
+- **Quilpo (Córdoba):** taller de construcción de nodos y despliegue (2012).  
+- **José de la Quintana / QuintanaLibre (Córdoba):** red comunitaria fundadora; mantenimiento, formación, administración, etc. (2011→).  
+- **Backbone UNC ↔ Valle de Paravachasca ↔ Altas Cumbres (Córdoba):** despliegue/expansión (mencionado ligado a FRIDA 2015, según trayectoria).  
+- **Palpalá (Jujuy):** jornadas/talleres de tecnologías libres (2013).
+
+### Encuentros / programas / articulaciones (ligadas a conectividad)
+- **Semillero “en pandemia” (2020):** financiado por APC, ISOC y “48%” (según trayectoria), con objetivo de incidencia para programas estatales posteriores (Barrios Populares y Roberto Arias).  
+- **Semillero 2019 (Traslasierra):** con Rhizomática, Pañuelos en Rebeldía y CTO (mencionado en trayectoria).  
+- **ORCAL (2019):** coordinación (mencionado en trayectoria; revisar materiales específicos si se quiere incluir en la web).  
+- **Encuentro LocNet (Kenia, 2019):** refuerzo de articulación latinoamericana e idea de estrategia regional (mencionado en trayectoria).  
+- **BattleMesh (varias ediciones):** participación y ponencias (Roma 2022, Barcelona 2023, etc.; ver trayectoria).
+
+### Redes/organizaciones aliadas mencionadas en presentaciones de documentales (útil para “redes amigas”)
+**Fuente:** post de presentaciones del documental QuintanaLibre (2019):  
+https://altermundi.net/2019/12/29/presentando-comunidades-haciendo-internet-experiencia-quintanalibre-el-documental-donde-las-y-los-protagonistas-hablan-en-voz-propia/
+- Red de Internet Comunitaria de Jujuy  
+- RICCAP  
+- DERCOM  
+- Atalaya Sur  
+- Redes Revueltas  
+- Barrios de Pie  
+
+
+# 9) CARC — Cumbre Argentina de Redes Comunitarias
+## 9.1 Qué es CARC (copy sugerido)
+> La CARC es un espacio de encuentro, formación y articulación para redes comunitarias en Argentina. Reúne experiencias territoriales, debates técnicos y políticos, y construye agenda colectiva para “internet desde los territorios”.
+
+**Fuentes públicas para sustento:**
+- Post de la 1ra CARC (2019): piloto mesh con LibreRouters, taller de fibra, estreno documental, declaración conjunta.  
+  Fuente: https://altermundi.net/2020/01/18/cumbre-argentina-de-redes-comunitarias-internet-desde-los-territorios/
+- Sitio mencionado como recurso: http://carc.libre.org.ar (referencia en conversatorio).  
+  Fuente: https://altermundi.net/2021/07/15/conversatorio-julio/
+
+## 9.2 Qué mostrar en la web
+- Página propia “CARC”: propósito, ediciones, declaración conjunta (link), fotos, videos, materiales.
+- Módulo “Declaración conjunta” (texto completo tomado del post o enlazado).
+- Módulo “Talleres CARC”: wifi/mesh/fibra y aprendizajes.
+
+---
+
+# 10) Formación (Semilleros, talleres, FOQSI)
+## 10.1 Semillero Roberto Arias (ENACOM)
+### Qué es (copy sugerido)
+> El Semillero es un proceso de formación y acompañamiento para comunidades que quieren desplegar su red y postular al Programa Roberto Arias de ENACOM. Combina organización comunitaria, planificación, formación técnica y despliegue inicial con equipos.
+
+**Fuentes:**
+- Semillero 2022 (post inicio): https://altermundi.net/2022/05/21/ya-arrancamos-con-el-semillero-de-redes-comunitarias-para-postulantes-al-roberto-arias/
+- Videos del Semillero 2022: https://altermundi.net/2022/09/16/videos-semillerorc22/
+- Programa Roberto Arias: https://altermundi.net/programa-roberto-arias-de-enacom-caracteristicas-y-requisitos/
+
+### Qué mostrar
+- Objetivos del semillero (3 bullets: formación, despliegue inicial, proyecto para ENACOM).
+- Mapa de provincias/organizaciones participantes (si se puede).
+- Galería de fotos y videos (ver sección 12).
+
+## 10.2 Talleres de red (WiFi, fibra, montaje, planificación)
+### FOQSI + Taller “Conectando futuros”
+- Taller presencial de WiFi y fibra, orientado a jóvenes y especialmente mujeres; incluye prácticas de fusionado, configuración de ONU, despliegue FTTH y medición de pérdidas.  
+  Fuente: https://altermundi.net/2024/10/15/conectando-futuros/
+- FOQSI como proceso de interconexión y formación (apoyo de cooperativa, acuerdo para postes, etc.).  
+  Fuente: https://altermundi.net/2024/10/15/foqsi/
+
+---
+
+# 11) Incidencia, regulación y presencia global (ONU/IGF, UIT-D)
+## 11.1 Argentina (ENACOM, licencias, fondos)
+- Primera licencia de operador de red comunitaria (AlterMundi, 2018).  
+  Fuente: https://altermundi.net/2018/12/20/altermundi-obtiene-licencia-de-operador-de-red-comunitaria-de-internet-en-argentina/
+- Guías prácticas: RUPECO y VARC (AlterMundi como acompañamiento).  
+  Fuentes:
+  - https://altermundi.net/como-solicitar-el-registro-en-el-rupeco/  
+  - https://altermundi.net/como-solicitar-una-licencia-varc-de-redes-comunitarias/
+- Programa Roberto Arias (FFSU / ANR) y requisitos.  
+  Fuente: https://altermundi.net/programa-roberto-arias-de-enacom-caracteristicas-y-requisitos/
+- ENACOM: Programa de Conectividad para Barrios Populares (presentación virtual) con participación de actores sociales; se registra participación de Nicolás Echániz (AlterMundi) en un conversatorio asociado (según fuente).  
+  Fuente: https://www.enacom.gob.ar/institucional/presentacion-virtual-del-programa-de-conectividad-para-barrios-populares_n2550
+
+## 11.2 ONU/IGF — Nicolás Echániz
+**Qué afirmar con sustento:**
+- Nicolás Echániz figura como presidente/integrante de AlterMundi y orador en sesiones del IGF (Internet Governance Forum, ámbito ONU).  
+  Fuentes:
+  - IGF 2016 speaker page: https://igf2016.sched.com/speaker/nicoechaniz  
+  - IGF 2018 session (speaker Nicolas Echaniz): https://www.intgovforum.org/en/content/igf-2018-ws-279-scaling-community-networks-exploring-blockchain-and-efficient-investment  
+  - IGF 2022 Day 0 event (speakers list): https://www.intgovforum.org/en/content/igf-2022-day-0-event-17-internet-commons-forum-internet-as-a-commons
+
+**Copy sugerido (para sección “Incidencia global”):**
+> Participamos activamente en espacios internacionales de gobernanza de internet y conectividad comunitaria. Llevamos la voz de las redes territoriales al debate global: cómo se construye infraestructura común, cómo se defiende el derecho a la comunicación y cómo se sostienen tecnologías libres.
+
+## 11.3 UIT-D (ONU) — participación AlterMundi (Jésica Giudice)
+- Post específico de participación en UIT-D (Ginebra, Suiza).  
+  Fuente: https://altermundi.net/2023/05/15/altermundi-en-la-union-internacional-de-telecomunicaciones-uit-d/
+- Trayectoria año a año (incluye ITU SG1, paneles y articulaciones).  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+
+---
+
+# 12) Videos esenciales (YouTube + curaduría)
+> Estructurar la sección “Videos” por series / temáticas, con miniatura y CTA.
+
+## 12.1 Serie documental “Comunidades haciendo Internet”
+1) **Capítulo 1 – Experiencia QuintanaLibre (2020)**  
+   - YouTube: https://www.youtube.com/watch?v=DcOAePVwafs  
+   - Descripción: historia de QuintanaLibre, red comunitaria que conecta a más de 70 familias (según descripción del video).  
+2) **Capítulo – Nuevas Redes (2021)**  
+   - YouTube: https://www.youtube.com/watch?v=fnHJfDJwEiY  
+   - Incluye testimonios de GranjaLibre, MolinosComunitaria, Montenet, LibreGrandeNet, ElValleReinicia (según descripción).
+
+## 12.2 CARC (2019)
+- Post dice que hubo “video memoria” y estreno documental en CARC 2019.  
+  Fuente: https://altermundi.net/2020/01/18/cumbre-argentina-de-redes-comunitarias-internet-desde-los-territorios/  
+(PENDIENTE: extraer URL exacta del video si se quiere embeber directo.)
+
+## 12.3 Semillero 2022 — playlist recomendada
+**Fuente (lista de videos curada):** https://altermundi.net/2022/09/16/videos-semillerorc22/  
+
+Sugerencia de cómo usarla:
+- Crear playlist embebida (YouTube) o “mosaico de videos” con categorías:
+  - Introducción: redes comunitarias, soberanía tecnológica
+  - Tecnología: LibreRouter, instalación, conectividad
+  - Incidencia/organización: financiamiento, ENACOM, roles comunitarios
+  - Casos: testimonios de redes
+
+## 12.4 Conversatorios y charlas
+- Conversatorio 2021 “Redes de Internet Comunitarias para organizaciones rurales” (tiene link a YouTube AlterMundiNet).  
+  Fuente: https://altermundi.net/2021/07/15/conversatorio-julio/  
+- (Opcional) Video de conversatorio en UNC citado en agenda HackMD (incluye link YouTube):  
+  Fuente: https://hackmd.io/%40eGmTRb_eQK6bgVqhiweweg/Skfkxl63F  
+  Link al video completo (según fuente): https://www.youtube.com/watch?v=6KD_f7DIzFE
+
+---
+
+# 13) Alianzas y socios (PONER SÍ O SÍ: UNC, INTI, ARDC, APC)
+## 13.1 Socios principales (pedidos por usuario)
+### Universidad Nacional de Córdoba (UNC)
+- Convenio: enlace inalámbrico de ~50 km + “ancho de banda ocioso donado” + datacenter/servidores/servicios.  
+  Fuentes:
+  - https://altermundi.net/convenios-y-colaboraciones/  
+  - https://altermundi.net/2022/12/11/la-agencia-telam-tomando-el-tema-redes-comunitarias-altermundi-y-librerouter/
+
+### INTI (Instituto Nacional de Tecnología Industrial)
+- Participación clave en homologación del LibreRouter en Argentina.  
+  Fuente: https://altermundi.net/2019/09/12/librerouter-ya-esta-homologado-en-argentina/
+- Colaboración en LoPaLiR (proyecto AlterMundi + INTI para producción local del router) (PENDIENTE: verificar URL exacta si cambia).  
+  Referencia buscable: “LoPaLiR” en altermundi.net.
+
+### ARDC
+- Grant “LibreRouterOS: Mesh-wide vision” (impacto y links oficiales a repos).  
+  Fuente: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/
+- Progreso del proyecto (post AlterMundi 2024): https://altermundi.net/2024/08/01/revolucionando-las-redes-mesh-con-tecnologias-de-codigo-abierto-un-vistazo-al-progreso-del-proyecto-apoyado-por-a-r-d-c/
+
+### APC (Association for Progressive Communications)
+- AlterMundi es miembro y se describen colaboraciones (también financiamientos a documentales y formación).  
+  Fuentes:
+  - https://altermundi.net/convenios-y-colaboraciones/  
+  - https://altermundi.net/2019/12/29/presentando-comunidades-haciendo-internet-experiencia-quintanalibre-el-documental-donde-las-y-los-protagonistas-hablan-en-voz-propia/  
+  - https://altermundi.net/2024/10/15/foqsi/  
+  - https://altermundi.net/2024/10/15/conectando-futuros/  
+  - https://altermundi.net/trayectoria_giudice/
+
+## 13.2 Alianzas complementarias relevantes (sugeridas para completar)
+- “48%” + ISOC + APC: se menciona financiamiento del semillero en pandemia (2020) con estos apoyos (según trayectoria).  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+- ISOC Beyond the Net: grant mencionado para LibreRouter Fase II (soporte remoto/tablero).  
+  Fuente: https://altermundi.net/2018/11/01/librerouter-fase-ii/
+
+- Rhizomática (semilleros, LocNet, articulación regional) — ver trayectoria y posts.  
+- LACNIC / Programa FRIDA (financiamiento y premios) — ver menciones en trayectoria y Télam.  
+- ISOC (Internet Society) — grant Beyond the Net, etc. (ver LibreRouter Fase II).  
+- ENACOM (Argentina) — licencias, programas, articulación (VARC, Roberto Arias).  
+- Cooperativa de Anisacate (apoyo FOQSI / taller).  
+  Fuente: https://altermundi.net/2024/10/15/conectando-futuros/
+
+---
+
+# 14) Personas y comunidad (perfiles públicos)
+## 14.1 Nicolás Echániz (AlterMundi)
+- Orador y organizador en IGF; diseñador/co-diseñador de herramientas como LibreMesh, Librenet6, LibreMap; gestión de proyecto LibreRouter; co-fundador DC3 (según perfil IGF 2016).  
+  Fuente: https://igf2016.sched.com/speaker/nicoechaniz
+
+## 14.2 Jésica Giudice (AlterMundi)
+- Hoja de vida pública, año a año (2011–2024) con formación, semilleros, ITU, BattleMesh, articulaciones.  
+  Fuente: https://altermundi.net/trayectoria_giudice/
+
+
+### Highlights (parafraseados desde la hoja de vida pública)
+**Eje 1 — Formación y acompañamiento**
+- Diseño y facilitación de semilleros y talleres técnicos-sociales para redes comunitarias (incluye formación de formadores).  
+- Acompañamiento en presentación de proyectos a programas públicos (ej. Roberto Arias) y visitas a organizaciones en centro y norte argentino.
+
+**Eje 2 — Incidencia y articulación**
+- Participación en espacios de política pública y regulación (Argentina y región).  
+- Articulaciones con actores estatales, universidades y programas internacionales (LocNet/APC).
+
+**Eje 3 — Participación internacional**
+- Paneles y participación en **UIT-D / ITU SG1** (Ginebra) por invitación de APC (según trayectoria).  
+- Participación en BattleMesh (varias ediciones) y encuentros regionales.
+
+**Hitos concretos (por año, selección amplia)**
+- **2024:** oradora en webinar de APC/Rhizomática/CITEL sobre telecomunicaciones rurales; colaboración en informe sobre contexto/políticas de redes comunitarias en Argentina.  
+- **2023:** acompañamiento a 9 proyectos Roberto Arias; panel ANATEL (Brasil) sobre redes comunitarias; paneles ITU SG1; participación en BattleMesh v15 (Barcelona).  
+- **2022:** Semillero anual con NodoTAU (APC) con 15 organizaciones de 7 provincias; participación en foro de redes comunitarias en Colombia; BattleMesh v14 (Roma).  
+- **2021:** docencia en diplomatura de apropiación tecnológica (universidad pública + ministerio); talleres de despliegue (La Poderosa).  
+- **2020:** semillero en pandemia y construcción de protocolos; acciones de articulación con Estado; mantenimiento de nodo de montaña.  
+- **2019:** coordinación/participación en CARC; homologación LibreRouter (diseño infografía manual); encuentros regionales (LocNet, Abya Yala).  
+- **2018:** coordinación Cumbre Latinoamericana de Redes Comunitarias; reporte para GISWatch.  
+- **2017–2012:** hackathons, quintana winter of code, talleres intensivos y despliegues (Quilpo, La Bolsa, Nono, etc.).
+
+(Ver la lista completa y detallada año a año en la fuente.)
+
+> Recomendación web: usar esta página como base para un perfil “Equipo” (resumen + highlights, no copiar todo).
+
+---
+
+# 15) Prensa y difusión (para sección “Noticias / Prensa”)
+- Nota sobre redes comunitarias, LibreRouter y experiencias rurales (Télam, replicada/comentada en AlterMundi).  
+  Fuente: https://altermundi.net/2022/12/11/la-agencia-telam-tomando-el-tema-redes-comunitarias-altermundi-y-librerouter/
+- Radios Libres (nota sobre documental “Nuevas Redes”).  
+  Fuente: https://nueva.radioslibres.net/comunidades-haciendo-internet-nuevas-redes/
+
+---
+
+# 16) Entrada especial: FOQSI (historia para una página propia)
+## 16.1 Relato sugerido (copy largo)
+> FOQSI nace como una necesidad concreta: mejorar la conectividad real de una región serrana y garantizar que el acceso a internet no dependa de soluciones cerradas o inestables. El camino elegido fue comunitario y formativo: aprender telecomunicaciones en serio, desde el territorio, con una mirada inclusiva.
+
+> A partir de un proceso de formación y organización local, FOQSI impulsa infraestructura de fibra óptica para interconectar comunidades, crear capacidades técnicas en jóvenes y especialmente mujeres, y construir autonomía tecnológica. La red se apoya en acuerdos cooperativos —como el uso de postes— y en alianzas que hacen posible el despliegue.
+
+**Fuentes para anclar el relato:**
+- FOQSI en marcha: https://altermundi.net/2024/10/15/foqsi/  
+- Taller teórico-práctico WiFi + fibra: https://altermundi.net/2024/10/15/conectando-futuros/
+
+## 16.2 Qué mostrar en FOQSI (contenido)
+- Contexto territorial (mapa local)
+- Línea de tiempo FOQSI (hitos, alianzas, acuerdos)
+- Formación (fotos de taller, herramientas, fusionado, etc.)
+- Infraestructura (FTTH, mediciones, ONU, continuidad)
+- Impacto (quiénes se forman, cómo mejora la conectividad)
+- CTA: “Sumate” / “Aprendé telecomunicaciones” / “Replicá FOQSI”
+
+---
+
+# 17) Guía de estética (colores, formas, expresividad)
+## 17.1 Concepto visual
+**“Años de compromiso”** se transmite con:
+- Material real (fotos de campo + gente + equipos + territorio)  
+- Capas de información (timeline, mapa, cifras, documentos, repos)  
+- Texturas: “tierra / sierra / fibra / radio” (orgánico + técnico)
+
+## 17.2 Paleta sugerida (accesible, sobria + cálida)
+> (Propuesta, ajustar a identidad actual si existe)
+
+- **Base oscura (texto sobre claro / fondos):** grafito / negro suave  
+- **Base clara:** blanco roto / papel reciclado  
+- **Acento 1 (territorio):** verde monte / oliva  
+- **Acento 2 (tecnología):** azul profundo / cian controlado  
+- **Acento 3 (energía):** naranja arcilla / ámbar  
+- **Acento 4 (futuro/fibra):** magenta/púrpura suave (muy puntual, para FOQSI o innovación)
+
+## 17.3 Formas y recursos gráficos
+- Patrón de **malla** (nodos + enlaces) como textura sutil de fondo.
+- Ondas (radio) + hebras (fibra) como líneas “vivas” en separadores.
+- Íconos lineales: nodo, enlace, antena, router, fibra, comunidad, herramienta (pinza/fusionadora).
+- Diagrama “mesh” animado (microinteracción) en hero: líneas se conectan lentamente.
+
+## 17.4 Tipografías (libres y legibles)
+- Titulares: **Montserrat** o **Fira Sans**  
+- Cuerpo: **Inter** o **Source Sans 3**  
+- Técnica/código: **Fira Mono** o **Source Code Pro**  
+Requisito: contraste AA/AAA y tamaños generosos.
+
+## 17.5 Fotografía (estilo)
+- Realista, sin stock.  
+- Mostrar:
+  - Manos instalando nodos
+  - Vecinxs en asamblea / taller
+  - LibreRouter en pared/torre
+  - Paisaje serrano / ruralidad (sin exotizar)
+  - Fibra: fusionado, mediciones, despliegue
+- Evitar “foto corporativa”; priorizar humanidad y proceso.
+
+---
+
+# 18) Lista de imágenes y videos a preparar (carpeta `imagenes/`)
+## Convención de nombres
+- minúsculas, sin tildes, con guiones: `yyyy-mm_contexto_descripcion.ext`
+- ejemplos: `2024-10_foqsi_taller-fibra_fusionando.jpg`
+
+## 18.1 Imágenes imprescindibles (mínimo viable)
+### Hero / portada
+1. `hero_mesh-ilustracion.svg` (ilustración original: malla/nodos + sierra)  
+2. `hero_quintanalibre_comunidad.jpg` (foto real de comunidad/taller o despliegue)
+3. `hero_librerouter_closeup.jpg` (primer plano del equipo instalado)
+
+### Tecnología
+4. `tech_librerouter_frente-puertos.jpg` (puertos/antenas/estructura)  
+5. `tech_libremesh_diagrama.svg` (diagrama simple: nodos + enlaces + gateway)  
+6. `tech_limeapp_screenshot.png` (captura LimeApp 1.4 en uso)  
+7. `tech_shared-state_diagrama.svg` (diagrama “estado compartido” a nivel malla)
+
+### Redes (mapa + historias)
+8. `redes_mapa_argentina_base.svg` (mapa simple con puntos)  
+9. `redes_quintanalibre_paisaje.jpg`  
+10. `redes_montenet_equipo.jpg` (si hay foto)  
+11. `redes_molinoscomunitaria_equipo.jpg`  
+12. `redes_libregrandenet_equipo.jpg`  
+13. `redes_elvallereinicia_equipo.jpg`
+
+### Formación
+14. `formacion_semillero_2022_taller.jpg` (foto de taller)  
+15. `formacion_semillero_2022_nodos.jpg` (montaje de nodos)  
+16. `formacion_carc_2019_grupal.jpg` (foto grupal)  
+
+### FOQSI (página propia)
+17. `2024-10_foqsi_fibra-rollos.jpg`  
+18. `2024-11_foqsi_taller-fibra_fusionando.jpg`  
+19. `2024-11_foqsi_ftth_despliegue.jpg`  
+20. `2024-11_foqsi_taller_mujeres-jovenes.jpg` (si existe, con consentimiento)
+
+### Alianzas / logos (vector)
+21. `logo_unc.svg`  
+22. `logo_inti.svg`  
+23. `logo_ardc.svg`  
+24. `logo_apc.svg`  
+25. `logo_enacom.svg` (si se usa, revisar lineamientos)  
+26. `logo_lacnic.svg` / `logo_frida.svg` (si se usan)  
+27. `logo_isoc.svg` (si se usa)  
+
+## 18.2 Videos a embeber (no descargar, usar YouTube)
+> Guardar miniaturas como JPG para la grilla (si no se usa API de YouTube).
+- `video_doc_quintanalibre` → https://www.youtube.com/watch?v=DcOAePVwafs  
+  Miniatura: `thumb_video_quintanalibre.jpg`
+- `video_doc_nuevas-redes` → https://www.youtube.com/watch?v=fnHJfDJwEiY  
+  Miniatura: `thumb_video_nuevas-redes.jpg`
+- Semillero 2022: tomar 6–12 videos principales desde https://altermundi.net/2022/09/16/videos-semillerorc22/  
+  Miniaturas: `thumb_semillero_2022_01.jpg`, `thumb_semillero_2022_02.jpg`, etc.
+- Conversatorio 2021 (si se usa): link YouTube en post https://altermundi.net/2021/07/15/conversatorio-julio/  
+  Miniatura: `thumb_conversatorio_2021.jpg`
+
+---
+
+# 19) Pendientes críticos (para completar con Drive “data base”)
+1. **Listado completo de redes acompañadas** (nombre, localidad, provincia, año, estado, cantidad de nodos, links, fotos).  
+2. **Base de socios/aliados** (contrapartes locales, cooperativas, organizaciones).  
+3. **Fotos y permisos** (consentimiento para publicar rostros; alternativas con planos de manos/equipos).  
+4. **Inventario de assets existentes** (logos en vector, fotos en alta, diagramas).
+
+---
+
+# 20) Anexo: enlaces clave (copiar/pegar)
+## AlterMundi (Docs y posts clave)
+- Docs ES: https://altermundi.net/documentacion/  
+- Docs EN: https://altermundi.net/documentation/  
+- Docs PT: https://altermundi.net/documentacao/  
+- LibreRouter Fase II: https://altermundi.net/2018/11/01/librerouter-fase-ii/  
+- LibreRouter homologado AR: https://altermundi.net/2019/09/12/librerouter-ya-esta-homologado-en-argentina/  
+- Licencia operador RC (ENACOM): https://altermundi.net/2018/12/20/altermundi-obtiene-licencia-de-operador-de-red-comunitaria-de-internet-en-argentina/  
+- CARC 2019: https://altermundi.net/2020/01/18/cumbre-argentina-de-redes-comunitarias-internet-desde-los-territorios/  
+- Nuevas redes 2020: https://altermundi.net/2020/09/29/nuevas-redes/  
+- ARDC progreso 2024: https://altermundi.net/2024/08/01/revolucionando-las-redes-mesh-con-tecnologias-de-codigo-abierto-un-vistazo-al-progreso-del-proyecto-apoyado-por-a-r-d-c/  
+- FOQSI: https://altermundi.net/2024/10/15/foqsi/  
+- Taller WiFi+Fibra: https://altermundi.net/2024/10/15/conectando-futuros/  
+- Hidden Nodes: https://altermundi.net/2024/12/01/hidden-nodes/  
+- Semillero 2022 (inicio): https://altermundi.net/2022/05/21/ya-arrancamos-con-el-semillero-de-redes-comunitarias-para-postulantes-al-roberto-arias/  
+- Semillero 2022 (videos): https://altermundi.net/2022/09/16/videos-semillerorc22/  
+- VARC: https://altermundi.net/como-solicitar-una-licencia-varc-de-redes-comunitarias/  
+- RUPECO: https://altermundi.net/como-solicitar-el-registro-en-el-rupeco/  
+- Programa Roberto Arias: https://altermundi.net/programa-roberto-arias-de-enacom-caracteristicas-y-requisitos/  
+- Convenios y colaboraciones: https://altermundi.net/convenios-y-colaboraciones/  
+- Trayectoria Jésica Giudice: https://altermundi.net/trayectoria_giudice/  
+- UIT-D (ONU): https://altermundi.net/2023/05/15/altermundi-en-la-union-internacional-de-telecomunicaciones-uit-d/
+
+## LibreMesh / LibreRouter / repos
+- Foro LibreRouter: https://foro.librerouter.org/  
+- LibreMesh downloads: https://downloads.libremesh.org/  
+- LibreMesh org: https://github.com/libremesh  
+- lime-packages: https://github.com/libremesh/lime-packages  
+- lime-app: https://github.com/libremesh/lime-app  
+- LibreRouter GitLab: https://gitlab.com/librerouter  
+- ARDC grant: https://www.ardc.net/apply/grants/2022-grants/grant-librerouteros-mesh-wide-vision/
+
+## Videos
+- Doc QuintanaLibre: https://www.youtube.com/watch?v=DcOAePVwafs  
+- Doc Nuevas Redes: https://www.youtube.com/watch?v=fnHJfDJwEiY  
+
+---
+
+## Nota final (transparencia)
+- No fue posible acceder desde aquí al Google Drive “data base” ni a “repos internos” vía herramienta de drive. Todo el dossier se compuso con fuentes públicas (AlterMundi.net, ARDC, LibreMesh, IGF, YouTube, etc.).  
+- Para lograr “no dejar nada afuera”, el paso siguiente es incorporar el “data base” interno (listado completo de redes y assets) y re-generar este dossier con esa base.

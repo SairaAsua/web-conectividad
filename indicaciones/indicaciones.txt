@@ -1,0 +1,259 @@
+Listo. Te dejo un **dossier “copiar/pegar”** para rediseñar la web de AlterMundi **centrada 100% en conectividad**: redes comunitarias + LibreMesh + LibreRouter (hardware, LibreRouterOS, LimeApp), con historia, estado actual, I+D, formación, política pública, recursos y estética.
+
+---
+
+## 1) Qué quiere contar la web (mensaje central)
+
+**Idea fuerza:** AlterMundi hace “infraestructura de internet como bien común”: tecnología abierta (software + hardware) + documentación + formación + acompañamiento, para que comunidades creen y sostengan sus propias redes.
+
+En sus propios materiales internos aparece clarísimo el arco histórico: **AlterMundi (ONG, fundada en 2011)** y el pasaje **AlterMesh → LibreMesh/LibreRouter**, con apoyos FRIDA / ISOC / APC / ARDC, etc. 
+
+---
+
+## 2) Estructura recomendada de la web (sitemap práctico)
+
+1. **Home**
+
+   * Hero + frase
+   * 3 pilares: *comunidad / tecnología libre / soberanía*
+   * CTA: “Explorar el stack”, “Ver guía de instalación”, “Sumarte al foro”
+2. **Redes Comunitarias**
+
+   * Qué son, qué NO son (no “internet gratis”), cómo se gobiernan
+   * Modelo: propiedad colectiva + gestión social + diseño accesible + participación abierta ([AlterMundi][1])
+3. **LibreMesh**
+
+   * Qué es (firmware/paquetes sobre OpenWrt), cómo se construyen imágenes, network-profiles, comunidad dev
+   * Protocolos típicos (batman-adv / babeld) + herramientas (lime-*) ([GitHub][2])
+4. **LibreRouter**
+
+   * Qué es el equipo (open hardware), por qué existe (necesidades de redes comunitarias, Global South)
+   * Manuales: conectar / instalar / operar
+   * Hardware + caja + antenas + puertos ([AlterMundi][3])
+5. **LibreRouterOS + LimeApp**
+
+   * LibreRouterOS basado en LibreMesh/OpenWrt + LimeApp para diagnóstico/gestión local ([AlterMundi][4])
+   * Foro y releases (ej. LibreRouterOS 1.5) ([LibreRouter][5])
+6. **I+D actual (2024–2026)**
+
+   * Wi-Fi for mesh, testbeds, virtual mesh, AP-UP fixes, “Shared State” (Rust), observabilidad, data collection   
+7. **Formación y comunidad**
+
+   * Semillero, tutoriales, videos (configuración colectiva, casos reales) ([AlterMundi][6])
+8. **Incidencia / política pública**
+
+   * Reconocimiento y marcos para redes comunitarias en Argentina (licencias, fondo/servicio univeroeas de redes comunitarias en Argentina) ([ITU][7])
+   * En materiales internos: participación en aprobación de programa nacional con Fondo de Servicio Universal 
+9. **Recursos**
+
+   * Repos, docs, foro, descargas, papers/notas, prensa, etc.
+10. **Sumate / Contacto**
+
+* Foro, listas, Matrix/Element, donaciones, alianzas
+
+---
+
+## 3) Historia resumida (línea de tiempo “de orígenes a hoy”)
+
+* **2011**: AlterMundi nace como asociación civil/ONG (Argentina). 
+* **2013**: arranca LibreMesh como proyecto global de activistas de redes libres. ([libremesh.org][8])
+* **2016**: FRIDA publica el proyecto LibreRouter (motivado, ene del hardware/firmware y regulaciones tipo FCC). ([Programa FRIDA][9])
+* **2017**: LibreMesh menciona reconocimiento/apoyo (Shuttleworth Flash Grant). ([libremesh.org][8])
+* **2018**: “LibreRouter Fase II” (autonomía/soberanía tecnológica; router mesh multi-radio diseñado por redes comunitarias([AlterMundi][10])
+* **2018**: Internet Society difunde LibreRouter (colaboración y enfoque comunitario). ([Internet Society][11])
+* **2019**: charla “LibreRouter, the router of community networks” (relato del proyecto y aprendizajes). ([media.freifunk.net][12])
+* **2020–2022**: ecosistema LibreRouterOS, herramientas y despliegues; anuncios en foro (ej. acceso remoto, releases). ([LibreRouter][13])
+* **2021**: FRIDA “LibreRouter V2.0” (evolución del stack, performance, eficiencia, rediseño). ([Programa FRIDA][14])
+* **2022**: experiencias formativas y videos (Semillero 2022). ([AlterMundi][6])
+* **2022 y 2024**: en docs internos se mencionan **dos grants grandes ARDC**: *“LibreRouterOS: Mesh-wide vision” (May 2022)* y *“The new Wi-Fi for mesh networks…” (Nov 2024).* 
+* **2025**: reporte técnico ARDC (Oct 2025) con avances fuertes en testbeds, virtual mesh, fixes y “Shared State” reescrito en Rust.  
+* **2026**: índice interno actualizado lista assets y docs de “Libre Mesh / Guía Técnica de Servicio para LibreRouter”. 
+
+---
+
+## 4) Qué mostrar SÍ o SÍ en la web (sin dejar “vacíos”)
+
+### A) Redes comunitarias (marco político + definición)
+
+* **Principios** (propiedad colectiva, gestión social, etc.) ([AlterMundi][1])
+* Diferenciar: no es “internet gratis”; es **infraestructura comunitaria** (autonomía y gobernanza).
+
+### B) El stack completo (con diagrama)
+
+**“Pedacitos de internet”** que se conectan así:
+
+* **LibreMesh** (paquetes/firmware sobre OpenWrt; perfiles por comunidad; despliegue multi-radio). ([GitHub][2])
+* **LibreRouter** (open hardware pensado para intemperie, multi-radio, conectividad rural). ([AlterMundi][15])
+* **LibreRouterOS** (basado en LibreMesh/OpenWrt) ([AlterMundi][4])
+* **LimeApp** (diagnóstico/administración local, sin internet). ([AlterMundi][16])
+* **Operación/mantenimiento real** (guías y herramientas: lime config, jerarquía de configs, safereboot). 
+
+### C) Caso concreto “en territorio” (para que la web tenga piel)
+
+Ejemplo muy potente (de un audio transcripto intern ~30 familias conectadas** y **un enlace de 15 km** a una localidad sin señal. 
+(Este tipo de h humana + impacto.)
+
+### D) Formación + comunidad (para que no sea “solo hardware”)
+
+* Semillero (videos, configuración colectiva, “en vivo” con comunidades) ([AlterMundi][6])
+* Foro (how-to, troubleshooting, releases, herramientas como acceso remoto) ([LibreRouter][17])
+
+### E) I+D actual (lo que demuestra “años de compromiso”)
+
+Del reporte ARDC (Oct 2025) se pueden extraer “bloques” para una sección tipo **Laboratorio / R&D**:
+
+* **Testbeds**: escenario “hidden node” y bancos con Wi-Fi 6 
+* **Virtual mesh**: paquete + scripts para simular redes mesh (vwifi_cli_package + libremesh-virtual-mesh). 
+* **AP-UP fix**: corrección para batman-adv (MAC única por interfaz) 
+* **Shared State** (la “columna vertebral” de coordinación): evolución Lua → C++ → **Rust** (más rápido, footprint menor). 
+
+### F) Incidencia / política pública
+
+En un formulario interno (SAI) se afirma que AlterMundi **contribuyó** a la aprobación del **primer programa nacional** que financia redes comunitarias mediante el Fondo de Servicio Universal. 
+Y como contexto internacional (para “ponerlo en el mapa”), WSIS muestra el caso argentino de licencias de redes comunitarias como **WSIS Prize([ITU][7])listos para pegar (copy web)
+
+> Son textos originales (así podés pegarlos sin depender de citas largas), pero anclados en fuentes.
+
+### BLOQUE 1 — Hero (Home)
+
+**Hacemos Internet con las comunidades.**
+Diseñamos y construimos tecnología abierta (software + formación) para que redes comunitarias desplieguen conectividad en territorios rurales y remotos, con autonomía y gobernanza local.
+
+### BLOQUE 2 — ¿Qué es una red comunitaria?
+
+Una red comunitaria es infraestructura de telecomunicaciones **propiedad de la comunidad**, gestionada colectivamente y diseñada para poder ser aprendida, replicada y sostenida por quienes la usan. No es “un servicio barato”: es **soberanía tecnológica aplicada**. (Principios alineados con: propiedad colectiva, gestión social, diseño accesible y participación abierta). ([AlterMundi][1])
+
+### BLOQUE 3 — LibreMesh (software)
+
+**LibreMesh (LiMe)** es un conjunto de paquetes y herramientas para desplegar redes mesh sobre **OpenWrt**, con conble, soportando escenarios multi-radio y perfiles por comunidad. ([GitHub][2])
+El proyecto nace en 2013de activistas y comunidades que buscaban una solución común para redes l([libremesh.org][8])
+
+### BLOQUE 4 — LibreRouter (hardware)
+
+**LibreRouter** es un router **open hardware** diseñado específicamente para las necesiinstalación en exterior, multi-radio, robustez, foco en territorios del Sur Global). ([media.freifunk.net][12])
+Incluye guías completas de conexión y montaje (antenas, PoE, cableado, ejemplos de nodo completo). ([AlterMundi][15])UE 5 — LibreRouterOS + LimeApp (operación)
+**LibreRouterOS** es el sistema operativo del LibreRouter: se apoya en **LibreMesh + OpenWrt** e integra herramientas libres como **LimeApp** para medir, diagnosticar y administrar la red localmente, incluso sin Internet. ([AlterMundi][4])
+
+### BLOQUE 6 — Mantenimiento “en serio”
+
+Operar redes reales implica procedimientos de campo: jerarquía de configuración (defaults → community → node), generación de config con `lime config`, y herramientas de seguridad como **safereboot** para evitar dejar nodos inaccesibles.  
+
+### BLOQUE 7 — I+D (Wi-Fi for mesh / coordinación / simulación)
+
+Hoy el trabajo incluye investigación aplicada: bancos de prueba (incluyendo hidden-node), simulación de mesh en virtual (QEMU/vwifi), mejoras de compatibilidad en batman-adv, y componentes de coordinación como “Shared State” reescrito en Rust para mayor performance en hardware embebido.  
+
+### BLOQUE 8 — Impacto en territorio (micro-historia)
+
+En redes rurales donde el mercado no llega, el enfoque comunitario funciona: con LibreRouter se han conectado familias y enlaces de decenas de kilómetros, habilitando conectividad donde antes no había ni señal telefónica. 
+
+---
+
+## 6) Links (repos, docs, foro, videos) — para pegar tal cual
+
+```text
+# Sitios
+https://altermundi.net/
+https://altermundi.net/documentation/libre-community-and-decentralized-networks/
+https://libremesh.org/
+https://librerouter.org/
+https://foro.librerouter.org/
+
+# LibreMesh (repos principales)
+https://github.com/libremesh/lime-packages
+https://libremesh.org/packages/
+https://libremesh.org/es_development.html
+
+# LibreRouter (repositorios)
+https://gitlab.com/librerouter
+# (ahí vas a ver: LibreRouter hardware repository, docs, LibreRouterOS, tests, etc.)
+
+# Docs útiles (LibreRouter / LimeApp)
+https://altermundi.net/documentation/how-is-a-librerouter/
+https://altermundi.net/documentation/connecting-a-librerouter-device/
+https://altermundi.net/documentacion/usar-limeapp1-4/
+
+# Foro: “primeros pasos”
+https://foro.librerouter.org/t/como-empezar-a-usar-un-librerouter/148
+# Foro: release LibreRouterOS 1.5
+https://foro.librerouter.org/t/lanzamiento-librerouteros-1-5/337
+# Foro: herramienta acceso remoto
+https://foro.librerouter.org/t/nueva-herramienta-acceso-remoto/219
+
+# Artículos / cobertura
+https://altermundi.net/2018/11/01/librerouter-fase-ii/
+https://www.internetsociety.org/es/blog/2018/12/librerouter-un-enrutador-inalambrico-multiradio-para-redes-comunitarias/
+https://programafrida.net/archivos/project/router-libre
+https://programafrida.net/archivos/project/librerouter-v2-0-evolucionando-la-soberania-tecnologica
+
+# Videos
+https://media.freifunk.net/v/librerouter-the-router-of-community-networks
+https://altermundi.net/altermundi/semillero-2022-videos/
+
+# Contexto política pública (WSIS)
+https://www.itu.int/net4/wsis/stocktaking/Prizes/2025/Details/16703330062 :contentReference[oaicite:70]{index=70}c:contentReference[oaicite:71]{index=71}a “años de compromiso y trabajo”)
+
+### Dirección visual
+**“Tecnología de territorio + precisión técnica + común”**. Que la web tenga dos capas:
+1) **Humana/territorial** (fotos reales de instalación, talleres, comunidades, nodos en intemperie, cableado, antenas).  
+2) **Técnica** (diagramas de red, mapas de nodos/enlaces, pantallas de LimeApp, snippets d:contentReference[oaicite:72]{index=72}c:contentReference[oaicite:73]{index=73}undi + conectividad)
+Usá la paleta del logo como identidad madre (**celeste / verde / amarillo / marrón**) y sumale:
+- **Neutros**: blanco roto + gris grafito (para lectura técnica)
+- **Azul noche** (para secciones “R&D / laboratorio”, tipo terminal)
+- **Verde señal** (estilo “li:contentReference[oaicite:74]{index=74}ar** (alertas / mantenimiento / nodos con issues)
+
+### Formas y recursos gráficos
+- **Tramas de red** (líneas finas + nodos) como patrón sutil de fondo.
+- **Ondas / espectro** (radio waves) para conectar con “Wi-Fi for mesh”.
+- **Iconos** minimalistas: nodo, enlace, antena, comunidad, herramientas, firmware, documentación.
+- **Componentes tipo “field cards”**: tarjetas que parecen “bitácora de campo” (fecha, lugar, qué se hizo, qué aprendimos).
+
+### Tipografía
+- Titulares: una sans moderna, sólida (sensación de infraestructura).
+- Cuerpo: sans legible.
+- Detalles técnicos: monoespaciada para comandos, logs y “how-to”.
+
+### Interacción / tono
+- Micro-animación de **“red que se arma”** (nodos conectándose) en el hero.
+- Sección **Timeline** con hitos (2011/2013/2016/2018/2021/2025).
+- Bloques “Antes/Después” para mejoras (ej. hidden node / loops / latencia). Del reporte ARDC hay material perfecto para esto. :contentReference[oaicite:75]{index=75}
+
+### Voz (copywriting)
+- **Cálida pero técnica.**
+- Clara en lo político sin panfleto: “derecho”, “autonomía”, “gobernanza local”, “común”.
+- Mostrar que hay “mantenimiento real”: guías, procedimientos, herramientas (safereboot, jerarquía de configs, etc.). :contentReference[oaicite:76]{index=76}
+
+---
+
+## 8) Material que conviene pedirle al equipo (checklist de contenido)
+Para que la web explote (y no quede abstracta), juntaría:
+- 10–20 fotos de nodos instalados (caja, antenas, PoE, altura, paisaje).
+- 5–10 fotos de talleres/semillero.
+- 5 screenshots de LimeApp (diagnóstico, actualización firmware, etc.). :contentReference[oaicite:77]{index=77}
+- 1 diagrama “stack” (LibreMesh → LibreRouterOS → LimeApp → comunidad).
+- 1 mapa (aunque sea ilustrativo) de una red real (nodos/enlaces).
+- 3 micro-historias (tipo CTO/Traslasierra: familias conectadas, km de enlace). :contentReference[oaicite:78]{index=78}
+
+---
+
+Si querés, en el próximo paso puedo convertir todo esto en **wireframe por secciones** (qué va en cada bloque, orden, CTA, y assets exactos), usando esta estructura como base.
+::contentReference[oaicite:79]{index=79}
+:contentReference[oaicite:80]{index=80}:contentReference[oaicite:81]{index=81}:contentReference[oaicite:82]{index=82}
+```
+
+[1]: https://altermundi.net/documentation/libre-community-and-decentralized-networks/?utm_source=chatgpt.com "Libre, community and decentralized networks |"
+[2]: https://github.com/libremesh/lime-packages?utm_source=chatgpt.com "GitHub - libremesh/lime-packages: LibreMesh packages configuring OpenWrt for wireless mesh networking"
+[3]: https://altermundi.net/documentation/how-is-a-librerouter/?utm_source=chatgpt.com "What are the characteristics of a LibreRouter? |"
+[4]: https://altermundi.net/documentacion/usar-limeapp1-4/un-paseo-por-el-menu-1-4/firmware/?utm_source=chatgpt.com "Firmware |"
+[5]: https://foro.librerouter.org/t/lanzamiento-librerouteros-1-5/337?utm_source=chatgpt.com "Lanzamiento LibreRouterOS 1.5 - Developer announces - LibreRouter"
+[6]: https://altermundi.net/altermundi/semillero-2022-videos/?utm_source=chatgpt.com "Videos de los encuentros virtuales del Semillero de Redes Comunitarias para postulantes al Programa Roberto Arias - 2022 |"
+[7]: https://www.itu.int/net4/wsis/stocktaking/Prizes/2025/Details/16703330062093867?utm_source=chatgpt.com "Community Networks in the strategy of… — WSIS Prizes 2023"
+[8]: https://libremesh.org/?utm_source=chatgpt.com "Home | LibreMesh"
+[9]: https://programafrida.net/archivos/project/router-libre?utm_source=chatgpt.com "| Programa FRIDA | LibreRouter"
+[10]: https://altermundi.net/2018/11/01/librerouter-fase-ii/?utm_source=chatgpt.com "LibreRouter Fase II |"
+[11]: https://www.internetsociety.org/es/blog/2018/12/librerouter-un-enrutador-inalambrico-multiradio-para-redes-comunitarias/?utm_source=chatgpt.com "LibreRouter: Un enrutador inalámbrico multiradio para redes comunitarias - Internet Society"
+[12]: https://media.freifunk.net/v/librerouter-the-router-of-community-networks?utm_source=chatgpt.com "media.freifunk.net - LibreRouter, the router of community networks"
+[13]: https://foro.librerouter.org/t/nueva-herramienta-acceso-remoto/219?utm_source=chatgpt.com "Nueva herramienta: Acceso Remoto - Developer announces - LibreRouter"
+[14]: https://programafrida.net/archivos/project/librerouter-v2-0-evolucionando-la-soberania-tecnologica?utm_source=chatgpt.com "| Programa FRIDA | LibreRouter V2.0 «Evolucionando la soberanía tecnológica»"
+[15]: https://altermundi.net/documentation/connecting-a-librerouter-device/?utm_source=chatgpt.com "Connecting a LibreRouter Device |"
+[16]: https://altermundi.net/documentacion/usar-limeapp1-4/?utm_source=chatgpt.com "Usar LimeApp 1.4 |"
+[17]: https://foro.librerouter.org/t/como-empezar-a-usar-un-librerouter/148?utm_source=chatgpt.com "Cómo empezar a usar un LibreRouter - Cómo se hace? - LibreRouter"

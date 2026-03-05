@@ -1,0 +1,288 @@
+# LibreRouter — hardware libre para redes comunitarias
+
+> **Entrada / página para web (borrador listo para maquetar)**  
+> En esta sección contamos qué es LibreRouter, por qué existe, cómo se usa y dónde encontrar documentación, repositorios y videos.  
+> Incluye **sugerencias de ubicación de fotos** (las que ya tenés) + nombres recomendados de archivo para la carpeta `/imagenes/`.
+
+---
+
+## 1) Hero (apertura)
+
+**LibreRouter** es un **router inalámbrico multirradio, de hardware abierto**, diseñado específicamente para desplegar **redes comunitarias**: redes libres, descentralizadas y gestionadas por las personas que las construyen.
+
+Nació de una necesidad muy concreta: durante años, las redes comunitarias del mundo se sostuvieron *adaptando routers hogareños comerciales*. Esa estrategia funcionó… hasta que quedó claro que **dependíamos de decisiones industriales y regulatorias ajenas** (por ejemplo, el bloqueo a la posibilidad de reemplazar el software de fábrica en muchos equipos, impulsado a partir de 2016). Frente a eso, la respuesta fue simple y colectiva: **diseñar un equipo propio, pensado desde el territorio, con software libre, documentación y herramientas para que cualquiera pueda desplegar su pedacito de Internet**.
+
+LibreRouter se construyó en alianza con comunidades y organizaciones del ecosistema de redes comunitarias: fue impulsado por AlterMundi junto a la *Community Networks Special Interest Group* de Internet Society, con apoyo del programa *Beyond the Net* (y articulaciones con redes y organizaciones como APC dentro del movimiento).
+
+**LibreRouter no es “solo un router”:** es parte de un *stack* (hardware + software + documentación + soporte) para que una comunidad pueda **desplegar, administrar, expandir y sostener** su propia infraestructura de comunicación.
+
+**Imagen sugerida (Hero):**
+- `imagenes/librerouter-hero-nodo-rural.jpg`  
+  (tu foto `C0110T01.JPG` — LibreRouter instalado en exterior, paisaje)
+
+---
+
+## 2) ¿Cómo funciona? (la idea en 30 segundos)
+
+LibreRouter está pensado como **nodo de malla (mesh)**:
+
+- Con **dos radios de 5 GHz** y **antenas sectoriales**, se enlaza automáticamente con otros nodos LibreRouter dentro de alcance, formando la malla.
+- Con el **radio de 2.4 GHz**, crea un **punto de acceso (Wi‑Fi local)** para que celulares y computadoras se conecten a la red comunitaria.
+
+Esto permite que una red crezca **nodo a nodo**, sin depender de una “central” única: si un nodo falla o se apaga, el resto busca **otro camino** para que los datos lleguen a destino.
+
+**Imagen sugerida (modo comunidad / despliegue):**
+- `imagenes/librerouter-montaje-comunidad-techo.jpg`  
+  (tu foto `DSC_2208.JPG` — equipo humano montando en altura)
+
+---
+
+## 3) Un kit listo para desplegar (qué trae un LibreRouter)
+
+La idea de “kit” importa: no es un router suelto, sino un conjunto pensado para instalación real.
+
+**Contenido típico del kit:**
+- 1 × dispositivo LibreRouter (en caja apta intemperie)
+- 2 × antenas sectoriales de 5 GHz
+- 4 × cables coaxiales (pigtails) para conectar antenas
+- Soportes articulados para montaje de antenas
+
+**Imagen sugerida (kit / producto):**
+- `imagenes/librerouter-kit-componentes.jpg`  
+  (tu foto `proyecto-librerouter-01.jpeg`)
+
+---
+
+## 4) Hardware para el territorio (robusto + reparable + adaptable)
+
+### Caja exterior y montaje
+
+El equipo está contenido en una **caja resistente a la intemperie** y pensado para montaje en exteriores. Incluye **tornillos y soporte** para fijarlo de manera segura.
+
+> Nota de diseño: la durabilidad en intemperie y el montaje prolijo no son “detalles”. En redes comunitarias, lo que falla suele ser *la instalación* (cables, humedad, estática, descargas), no la idea de la red. Por eso el proyecto integra recomendaciones de montaje y protección eléctrica en la documentación.
+
+### Puertos, conectores y energía (resumen)
+
+LibreRouter contempla escenarios reales: PoE, pasamuros, descarga a tierra, expansión.
+
+- **4 conectores externos RP‑SMA** para antenas 5 GHz (dos por antena, MIMO 2×2).
+- Antena **2.4 GHz integrada** dentro de la caja (cobertura local).
+- **2 puertos Ethernet Gigabit** (WAN + LAN).
+- **PoE pasivo** de entrada y **PoE pass‑through** (un nodo puede alimentar a otro, según el caso).
+- Tornillo de **puesta a tierra / grounding** para descarga.
+- USB y botón de reset.
+
+**Imagen sugerida (detalle de puertos):**
+- `imagenes/librerouter-diagrama-puertos-poe.png`  
+  (tu imagen `royecto-librerouter-diagrama-puertos.png`)
+
+---
+
+## 5) Ficha técnica (LR1) — datos duros para “nerds” y para quienes instalan
+
+> Estos datos vienen del PDF oficial de especificaciones del modelo **LR1**.  
+> **Ojo:** el proyecto evoluciona (firmwares y futuras revisiones de hardware). Si vas a usar esta tabla, conviene presentarla como “Especificaciones del modelo LR1”.
+
+| Categoría | Especificación (LibreRouter LR1) |
+|---|---|
+| Configuración | Triple‑radio **2×2** (nodo mesh 802.11n) |
+| CPU / SoC | **Atheros QCA9558** |
+| RAM | **128 MB DDR2** |
+| Flash | **16 MB NOR** |
+| Radios | 1× 2.4 GHz 802.11b/g/n (QCA9558) + 2× 5 GHz 802.11a/n (AR9582 mPCI) |
+| Potencia máx. | 2.4 GHz: **19 dBm ±2** (según regulación del país) / 5 GHz: **27 dBm ±2** (según regulación del país) |
+| Antenas | 2.4 GHz MIMO 2×2 **integrada** (14 dBi) + 2× antenas 5 GHz MIMO 2×2 (15 dBi, 10×28 cm, intemperie) |
+| Conectores RF | 4× RP‑SMA externos (5 GHz) + conectores internos UFL (2.4 GHz) |
+| Ethernet | 2× Gigabit RJ‑45 |
+| Energía | **PoE pasivo 12–32 V** (pines 4/5 + y 7/8 −) + jack DC 9–32 V + **PoE passthrough** |
+| Consumo | Idle 4.5 W / típico 5–8 W / máximo 14 W / máximo + passthrough 30 W |
+| Protección | Descarga: **8 descargadores de gas** (4 por puerto Ethernet) + ESD (4 kV conductive / 8 kV air) + tornillo de grounding |
+| Ambiente | Operación 0–40 °C / almacenamiento −40 a 70 °C / humedad típica 5–90% |
+| Dimensiones (caja) | 300 × 205 × 76 mm |
+| Peso | 0.85 kg dispositivo / ~1.8 kg kit total |
+| Extras | Watchdog **ATTiny13**, 8 LEDs de estado, USB 2.0, consola serial interna |
+
+---
+
+## 6) Software libre preinstalado: LibreRouterOS + LibreMesh + LimeApp
+
+LibreRouter viene listo para usar con un sistema basado en **OpenWrt + LibreMesh** (a veces referido como “LibreRouterOS” en el proyecto). La meta es que **una comunidad sin especialistas en redes** pueda desplegar y mantener una red, aprendiendo en el proceso.
+
+### Autoconfiguración (crecer sin dolor)
+Una de las claves del stack es que **nodos nuevos pueden autoconfigurarse** tomando información de los nodos ya existentes en la red. Esto simplifica la expansión: sumar un nodo no debería requerir una sesión de ingeniería cada vez.
+
+### LimeApp (administrar y diagnosticar sin Internet)
+**LimeApp** es una aplicación web liviana para **medir, diagnosticar y administrar** una red comunitaria **localmente, sin conexión a Internet**, directamente desde el celular o computadora conectada al nodo.
+
+**Imagen sugerida (captura / interfaz):**
+- `imagenes/limeapp-mockup-movil.png`  
+  (tu imagen `mockup.png`)
+
+---
+
+## 7) Instalación: “leer antes de encender” (súper importante)
+
+La documentación insiste en algo básico: **leer el instructivo completo antes de alimentar el equipo**. Se describen pasos para:
+
+- Conectar antenas y verificar conectores.
+- Elegir método de energía (PoE desde 110/220 V o alimentación por batería).
+- Montar protección eléctrica y descarga a tierra.
+- Probar encendido y funcionamiento.
+
+**Imagen sugerida (escena humana / entrega de kit):**
+- `imagenes/librerouter-entrega-kit.jpg`  
+  (tu foto `_DSC8032.jpg`)
+
+---
+
+## 8) Evolución y continuidad (LibreRouter V2.0)
+
+LibreRouter es una tecnología viva. El proyecto incluye un plan de continuidad y rediseño: **LibreRouter V2.0** plantea actualizar la tecnología para:
+
+- enfrentar la **escasez / discontinuidad** de componentes de la versión anterior,
+- mejorar **rendimiento** y **eficiencia energética**,
+- incorporar mejoras detectadas tras **años de despliegues** en escenarios diversos,
+- sostener la **soberanía tecnológica** de las redes comunitarias.
+
+---
+
+## 9) Banco de citas (frases cortas para destacar en la web)
+
+> Citas breves (menos de 25 palabras cada una) para usar como destacados o “callouts”.
+
+- “Open‑source hardware WiFi router designed for the specific needs of community networks.” (Internet Society, 2018)  
+  Fuente: https://www.internetsociety.org/blog/2018/12/librerouter-a-multi-radio-wireless-router-for-community-networks/
+
+- “El proyecto LibreRouter contempla el desarrollo de hardware, software y documentación.” (AlterMundi, documentación)  
+  Fuente: https://altermundi.net/documentacion/redes-libres-comunitarias-y-descentralizadas/
+
+- “Continuidad al stack LibreRouter: hardware, software, documentación y soporte audiovisual.” (FRIDA, 2021)  
+  Fuente: https://programafrida.net/archivos/project/librerouter-v2-0-evolucionando-la-soberania-tecnologica
+
+---
+
+## 10) Textos cortos “para usar en tarjetas / destacados” (copys)
+
+### Copys (1 línea)
+- **Hardware libre para que tu comunidad despliegue su propio Internet.**
+- **Tres radios, malla automática, intemperie y PoE: diseñado para el territorio.**
+- **Se instala con herramientas comunes y se gestiona con software libre.**
+
+### Copys (2–3 líneas)
+LibreRouter es un nodo de red pensado para redes comunitarias: se enlaza en malla con otros nodos, ofrece Wi‑Fi local y trae software libre + documentación para que una comunidad despliegue y sostenga su infraestructura.
+
+---
+
+## 11) Recursos y enlaces (para la web)
+
+> **IMPORTANTE:** estos links están para copiar y pegar tal cual en la web.  
+> Si vas a maquetar con CMS, podés dividirlos en “Documentación / Repos / Comunidad / Descargas”.
+
+### Documentación de AlterMundi (español)
+- Documentación general: https://altermundi.net/documentacion/
+- Proyecto LibreRouter dentro del material “Redes libres, comunitarias y descentralizadas”: https://altermundi.net/documentacion/redes-libres-comunitarias-y-descentralizadas/
+- Cómo es un LibreRouter (partes + conectores): https://altermundi.net/como-es-un-librerouter/
+- Conectar un Equipo LibreRouter (incluye video): https://altermundi.net/conectar-un-equipo-librerouter/
+- Configurar un nuevo equipo en una red existente: https://altermundi.net/configurar-un-nuevo-equipo-librerouter-en-una-red-comunitaria-que-ya-existe/
+- Montar un nodo LibreRouter: https://altermundi.net/montar-un-nodo-librerouter/
+- Usar LimeApp 1.4: https://altermundi.net/usar-limeapp-1-4/
+
+### Proyecto LibreRouter (repositorios y comunidad)
+- Grupo en GitLab (repos de hardware, LibreRouterOS, docs, u‑boot, etc.): https://gitlab.com/librerouter
+- Foro (soporte y experiencias): https://foro.librerouter.org/
+
+### Especificaciones de hardware (LR1)
+- PDF oficial (LibreRouter Specifications v7.5): https://gitlab.com/librerouter/boards/-/wikis/files/LibreRouter_Specifications_v7.5.pdf
+
+### Contexto y aliados (referencias públicas)
+- Internet Society – artículo sobre LibreRouter (colaboración y descripción general): https://www.internetsociety.org/blog/2018/12/librerouter-a-multi-radio-wireless-router-for-community-networks/
+- FRIDA – LibreRouter V2.0 “Evolucionando la soberanía tecnológica” (continuidad del stack): https://programafrida.net/archivos/project/librerouter-v2-0-evolucionando-la-soberania-tecnologica
+
+### LibreMesh / LimeApp (código)
+- LibreMesh (proyecto): https://libremesh.org/
+- lime-app (paquete / referencia): https://libremesh.org/packages/lime-app.html
+- Repo GitHub lime-app: https://github.com/libremesh/lime-app
+- Repo GitHub lime-packages (LibreMesh): https://github.com/libremesh/lime-packages
+
+---
+
+## 12) Videos recomendados (YouTube)
+
+> Sugerencia: en la web, usar un bloque “Aprendé con videos” con 4–6 embeds máximos (y luego un link a “Ver todos”).
+
+### Instalación y primeros pasos
+- Conectar un Equipo LibreRouter: https://youtu.be/vvO6rWXxEZc
+- Video sobre opciones de alimentación/energía (mencionado en la guía de conexión): https://youtu.be/8RehCpZ2KUo
+
+### LimeApp / gestión local
+- Encuentro Semillero 2022 – sección LimeApp: https://www.youtube.com/watch?v=HjYbv8qkAcs
+- Encuentro Semillero 2022 – configuración colectiva: https://www.youtube.com/watch?v=dB0ITbiludA
+
+### Montaje y despliegue
+- Encuentro Semillero 2022 – montar un nodo (conceptos y tips): https://www.youtube.com/watch?v=Cw0cm1DLgvA
+- Ejemplo práctico de montaje (Semillero 2022): https://www.youtube.com/watch?v=c-VX6YRBVLY
+
+---
+
+## 13) Assets: lista de imágenes (y nombres sugeridos)
+
+> **Objetivo:** que la carpeta `/imagenes/` tenga nombres coherentes y “predecibles” para que el maquetado sea automático.
+
+### Imágenes que YA tenés
+1. `librerouter-hero-nodo-rural.jpg`  
+   **Origen:** `C0110T01.JPG`  
+   **Uso:** hero / apertura  
+   **Alt:** “Nodo LibreRouter instalado en exterior, listo para enlazar en malla en territorio.”
+
+2. `librerouter-entrega-kit.jpg`  
+   **Origen:** `_DSC8032.jpg`  
+   **Uso:** sección instalación / comunidad  
+   **Alt:** “Entrega y revisión comunitaria de un kit LibreRouter antes del despliegue.”
+
+3. `librerouter-montaje-comunidad-techo.jpg`  
+   **Origen:** `DSC_2208.JPG`  
+   **Uso:** sección ‘cómo se despliega’ / historia  
+   **Alt:** “Jornada comunitaria de montaje de un nodo en altura.”
+
+4. `librerouter-logo.png`  
+   **Origen:** `LibreRouter Logo.png`  
+   **Uso:** cierre / firma / header secundario  
+   **Alt:** “Logo LibreRouter.”
+
+5. `limeapp-mockup-movil.png`  
+   **Origen:** `mockup.png`  
+   **Uso:** sección LimeApp  
+   **Alt:** “Capturas de LimeApp: alineación, estado del nodo y mediciones hacia Internet.”
+
+6. `librerouter-kit-componentes.jpg`  
+   **Origen:** `proyecto-librerouter-01.jpeg`  
+   **Uso:** sección ‘qué trae el kit’  
+   **Alt:** “Componentes del kit LibreRouter: dispositivo, antenas, cables coaxiales y soportes.”
+
+7. `librerouter-diagrama-puertos-poe.png`  
+   **Origen:** `royecto-librerouter-diagrama-puertos.png`  
+   **Uso:** sección puertos y energía  
+   **Alt:** “Diagrama de puertos y alimentación PoE / PoE pass‑through del LibreRouter.”
+
+### Assets EXTRA recomendados (si podés sumar)
+8. `librerouter-diagrama-3radios.svg`  
+   **Tipo:** ilustración simple  
+   **Uso:** explicar “2×5GHz mesh + 2.4GHz clientes” de un vistazo.
+
+9. `librerouter-malla-topologia.svg`  
+   **Tipo:** ilustración simple  
+   **Uso:** topología mesh (3–6 nodos) con rutas alternativas.
+
+---
+
+## 14) Fuentes principales (para trazabilidad)
+
+- AlterMundi – Documentación LibreRouter y redes comunitarias: https://altermundi.net/documentacion/  
+- AlterMundi – Proyecto LibreRouter dentro de “Redes libres, comunitarias y descentralizadas”: https://altermundi.net/documentacion/redes-libres-comunitarias-y-descentralizadas/  
+- LibreRouter – GitLab Group: https://gitlab.com/librerouter  
+- LibreRouter – Foro: https://foro.librerouter.org/  
+- LibreRouter – Specifications v7.5 (LR1): https://gitlab.com/librerouter/boards/-/wikis/files/LibreRouter_Specifications_v7.5.pdf  
+- Internet Society (CNSIG + AlterMundi + Beyond the Net): https://www.internetsociety.org/blog/2018/12/librerouter-a-multi-radio-wireless-router-for-community-networks/  
+- FRIDA – LibreRouter V2.0: https://programafrida.net/archivos/project/librerouter-v2-0-evolucionando-la-soberania-tecnologica  
+
+---
