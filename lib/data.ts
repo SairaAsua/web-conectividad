@@ -348,87 +348,9 @@ export const equipo = [
 ];
 
 // ── Posts del blog ───────────────────────────────
+// Migrado desde WordPress altermundi.net (2020-2025)
 export const posts = [
-  {
-    slug: "hidden-nodes",
-    title: "AlterMundi y el desafío de los Nodos Ocultos (Hidden Nodes)",
-    date: "2024-12-01",
-    dateDisplay: "1 diciembre, 2024",
-    author: "Jesica Giudice",
-    excerpt:
-      "Las redes inalámbricas enfrentan un desafío crítico cuando un nodo no puede atender bien otros dos nodos que no se ven entre sí. Cómo AlterMundi explora soluciones para este problema técnico.",
-    tags: ["redes mesh", "software libre", "I+D"],
-    content: `
-En un mundo cada vez más conectado, las redes inalámbricas son fundamentales para nuestra vida diaria. Sin embargo, no están exentas de desafíos técnicos.
-
-Uno de los problemas más comunes se llama **Problema de Nodo Oculto** (Hidden Node). Ocurre cuando dos nodos que no pueden detectarse entre sí intentan enviar datos simultáneamente a un tercer nodo.
-
-## Soluciones exploradas
-
-**RTS/CTS** (Request to Send / Clear to Send): Un nodo envía una solicitud; si el destino está disponible, responde con un permiso. Reduce colisiones pero añade latencia.
-
-**TDMA** (Acceso Múltiple por División de Tiempo): Los nodos se coordinan y se le asigna a cada uno un lapso de tiempo. Elimina colisiones pero requiere sincronización muy precisa — compleja en sistemas distribuidos.
-
-En AlterMundi construimos testbeds reales (escenario "hidden node") y bancos con Wi-Fi 6 para estudiar y resolver esto con código abierto.
-    `,
-  },
-  {
-    slug: "foqsi",
-    title: "¡La Red FOQSI ya está en marcha!",
-    date: "2024-10-15",
-    dateDisplay: "15 octubre, 2024",
-    author: "Jesica Giudice",
-    excerpt:
-      "La red FOQSI (Fibra Óptica de Quintana y San Isidro) comenzó su despliegue. No es solo infraestructura técnica: es un motor de cambio para José de la Quintana.",
-    tags: ["FOQSI", "fibra óptica", "conectividad comunitaria"],
-    content: `
-Con mucho entusiasmo anunciamos que la red **FOQSI** (Fibra Óptica de Quintana y San Isidro) ha comenzado su despliegue. Este proyecto lleva meses de planificación y está orientado a acercar conectividad e inclusión digital a la comunidad de José de la Quintana.
-
-## Formación para el futuro
-
-Hemos lanzado un taller gratuito de redes WiFi y fibra óptica, dirigido especialmente a **jóvenes y mujeres**. El proyecto incluye una mesa de trabajo permanente y abierta, financiada mayoritariamente por **APC**.
-    `,
-  },
-  {
-    slug: "ardc-apup-apc",
-    title: "Revolucionando las redes mesh: Proyecto ARDC",
-    date: "2024-08-01",
-    dateDisplay: "1 agosto, 2024",
-    author: "Jesica Giudice",
-    excerpt:
-      "LibreMesh, financiado por ARDC, recibió importantes mejoras: el modo APuP aprobado en OpenWRT, Shared State reescrito en C++20 y gestión mesh-wide desde un punto.",
-    tags: ["libremesh", "ARDC", "APuP", "software libre"],
-    content: `
-Gracias al financiamiento de la fundación **Amateur Radio Digital Communications (ARDC)**, LibreMesh recibió mejoras importantes.
-
-## Tres ejes del proyecto
-
-**1. Modo Wi-Fi APuP** (Access Point Micro Peering): Permite que los APs se comuniquen entre sí directamente. Fue **enviado y aprobado en OpenWRT**.
-
-**2. Shared-State** optimizado: Proceso P2P de intercambio de info entre equipos, reescrito en **corrutinas de C++20** para dispositivos embebidos.
-
-**3. Gestión mesh-wide**: Actualización de firmware en *todos* los nodos de la red desde un único punto.
-
-Presentado en **Battlemesh 2024** con gran impacto en la comunidad global de redes mesh.
-    `,
-  },
-  {
-    slug: "uitd-2023",
-    title: "AlterMundi en la Unión Internacional de Telecomunicaciones (UIT-D)",
-    date: "2023-05-15",
-    dateDisplay: "15 mayo, 2023",
-    author: "AlterMundi",
-    excerpt:
-      "Participamos en los encuentros de la UIT (agencia ONU) visibilizando las realidades de las redes comunitarias argentinas ante la comunidad internacional.",
-    tags: ["UIT", "política pública", "APC"],
-    content: `
-AlterMundi participó en los encuentros de la **UIT (Unión Internacional de Telecomunicaciones)**, gracias a la invitación de APC.
-
-La participación de la sociedad civil en estos espacios aporta expertise real sobre acceso digital, inclusión y apropiación tecnológica, mientras fomenta la transparencia en políticas de TICs internacionales.
-
-> Estamos convencidos de que visibilizar las realidades de las redes comunitarias merece todos nuestros esfuerzos en este tipo de contextos.
-    `,
-  },
+  // ─── 2025 ───
   {
     slug: "shared-state-rust",
     title: "Shared State reescrito en Rust: más performance, menos footprint",
@@ -458,23 +380,288 @@ Es la "columna vertebral" de coordinación de LibreMesh: permite que todos los n
 - **AP-UP fix**: corrección para batman-adv (MAC única por interfaz)
     `,
   },
+  // ─── 2024 ───
+  {
+    slug: "hidden-nodes",
+    title: "AlterMundi y el desafío de los Nodos Ocultos (Hidden Nodes)",
+    date: "2024-12-01",
+    dateDisplay: "1 diciembre, 2024",
+    author: "Jesica Giudice",
+    excerpt:
+      "Las redes inalámbricas enfrentan un desafío crítico cuando un nodo no puede atender bien otros dos nodos que no se ven entre sí. Cómo AlterMundi explora soluciones para este problema técnico.",
+    tags: ["redes mesh", "software libre", "I+D"],
+    content: `
+En un mundo cada vez más conectado, las redes inalámbricas son fundamentales para nuestra vida diaria. Sin embargo, no están exentas de desafíos técnicos.
+
+Uno de los problemas más comunes se llama **Problema de Nodo Oculto** (Hidden Node). Ocurre cuando dos nodos que no pueden detectarse entre sí intentan enviar datos simultáneamente a un tercer nodo.
+
+## Soluciones exploradas
+
+**RTS/CTS** (Request to Send / Clear to Send): Un nodo envía una solicitud; si el destino está disponible, responde con un permiso. Reduce colisiones pero añade latencia.
+
+**TDMA** (Acceso Múltiple por División de Tiempo): Los nodos se coordinan y se le asigna a cada uno un lapso de tiempo. Elimina colisiones pero requiere sincronización muy precisa — compleja en sistemas distribuidos.
+
+En AlterMundi construimos testbeds reales (escenario "hidden node") y bancos con Wi-Fi 6 para estudiar y resolver esto con código abierto.
+    `,
+  },
+  {
+    slug: "foqsi",
+    title: "¡La Red FOQSI ya está en marcha! Conectividad, formación y oportunidades",
+    date: "2024-10-15",
+    dateDisplay: "15 octubre, 2024",
+    author: "Jesica Giudice",
+    excerpt:
+      "La red FOQSI (Fibra Óptica de Quintana y San Isidro) comenzó su despliegue. No es solo infraestructura técnica: es un motor de cambio para José de la Quintana.",
+    tags: ["FOQSI", "fibra óptica", "conectividad comunitaria"],
+    content: `
+Con mucho entusiasmo anunciamos que la red **FOQSI** (Fibra Óptica de Quintana y San Isidro) ha comenzado su despliegue. Este proyecto lleva meses de planificación y está orientado a acercar conectividad e inclusión digital a la comunidad de José de la Quintana.
+
+## Taller gratuito
+
+Lanzamos un taller gratuito de redes WiFi y fibra óptica, dirigido especialmente a **jóvenes y mujeres** de la localidad.
+
+## Financiamiento
+
+El proyecto incluye una mesa de trabajo permanente y abierta, financiada mayoritariamente por **APC** (Association for Progressive Communications).
+
+## FOQSI en el mapa de AlterMundi
+
+FOQSI es parte de la evolución natural de **QuintanaLibre**, la red comunitaria pionera con más de 13 años conectando a familias de José de la Quintana. Ahora damos el siguiente paso: fibra óptica para toda la comunidad.
+    `,
+  },
+  {
+    slug: "ardc-apup-apc",
+    title: "Revolucionando las redes mesh con tecnologías de código abierto: Proyecto ARDC",
+    date: "2024-08-01",
+    dateDisplay: "1 agosto, 2024",
+    author: "Jesica Giudice",
+    excerpt:
+      "LibreMesh, financiado por ARDC, recibió importantes mejoras: el modo APuP aprobado en OpenWRT, Shared State reescrito en C++20 y gestión mesh-wide desde un punto.",
+    tags: ["libremesh", "ARDC", "APuP", "software libre"],
+    content: `
+Gracias al financiamiento de la fundación **Amateur Radio Digital Communications (ARDC)**, LibreMesh recibió mejoras importantes que cambian el paradigma de las redes mesh comunitarias.
+
+## Tres ejes del proyecto
+
+**1. Modo Wi-Fi APuP** (Access Point Micro Peering): Permite que los APs se comuniquen entre sí directamente. Fue **enviado y aprobado en OpenWRT** — una gran victoria para la comunidad de redes mesh globales.
+
+**2. Shared-State** optimizado: Proceso P2P de intercambio de información entre equipos, reescrito en **corrutinas de C++20** para dispositivos embebidos con recursos muy limitados.
+
+**3. Gestión mesh-wide**: Actualización de firmware en *todos* los nodos de la red desde un único punto — esencial para el mantenimiento de redes grandes.
+
+Presentado en **Battlemesh 2024** con gran impacto en la comunidad global de redes mesh.
+    `,
+  },
+  // ─── 2023 ───
+  {
+    slug: "uitd-2023",
+    title: "AlterMundi en la Unión Internacional de Telecomunicaciones (UIT-D)",
+    date: "2023-05-15",
+    dateDisplay: "15 mayo, 2023",
+    author: "AlterMundi",
+    excerpt:
+      "Participamos en los encuentros de la UIT (agencia ONU) visibilizando las realidades de las redes comunitarias argentinas ante la comunidad internacional.",
+    tags: ["UIT", "política pública", "APC", "internacional"],
+    content: `
+AlterMundi participó en los encuentros de la **UIT (Unión Internacional de Telecomunicaciones)**, gracias a la invitación de **APC** (Association for Progressive Communications).
+
+La participación de la sociedad civil en estos espacios aporta expertise real sobre acceso digital, inclusión y apropiación tecnológica, mientras fomenta la transparencia en políticas de TICs internacionales.
+
+## Lo que compartimos
+
+Presentamos la experiencia argentina de redes comunitarias: el modelo LibreMesh/LibreRouter, el **Programa Roberto Arias** como política pública pionera, y los aprendizajes del Semillero 2022.
+
+> Estamos convencidos de que visibilizar las realidades de las redes comunitarias merece todos nuestros esfuerzos en este tipo de contextos.
+    `,
+  },
   {
     slug: "tierra-fertil-palma-sola",
-    title: "Tierra Fértil presentó su red comunitaria para Palma Sola",
+    title: "Tierra Fértil presentó su proyecto de Red Comunitaria para Palma Sola",
     date: "2023-05-12",
     dateDisplay: "12 mayo, 2023",
     author: "AlterMundi",
     excerpt:
-      "¡Felicitaciones a Tierra Fértil por presentar su proyecto al Programa Roberto Arias de ENACOM! Comunidades haciendo Internet.",
-    tags: ["redes comunitarias", "Programa Roberto Arias", "ENACOM"],
+      "¡Felicitaciones a Tierra Fértil por presentar su proyecto al Programa Roberto Arias de ENACOM! Jujuy suma otra comunidad al mapa de redes libres.",
+    tags: ["redes comunitarias", "Programa Roberto Arias", "ENACOM", "Jujuy"],
     content: `
 ¡Felicitaciones **Tierra Fértil** por presentar su proyecto al **Programa Roberto Arias** de ENACOM!
 
-## Comunidades haciendo Internet
+## Una comunidad que quiere conectarse
 
-**QuintanaLibre** conecta más de **70 familias** en José de La Quintana, Córdoba, con más de **8 años** de historia sostenida por la propia comunidad.
+Palma Sola, en la provincia de **Jujuy**, suma un nuevo proyecto de red comunitaria al mapa argentino. Tierra Fértil acompañó el Semillero 2022 y ahora da el paso de postularse formalmente al financiamiento de ENACOM.
 
-El **Programa Roberto Arias** de ENACOM es la primera política pública nacional que financia redes comunitarias con el Fondo de Servicio Universal — un logro en el que AlterMundi contribuyó activamente.
+## El modelo que funciona
+
+**QuintanaLibre** conecta más de **70 familias** en José de La Quintana, Córdoba, con más de **13 años** de historia sostenida por la propia comunidad.
+
+El **Programa Roberto Arias** de ENACOM es la primera política pública nacional que financia redes comunitarias con el Fondo de Servicio Universal — un logro en el que AlterMundi contribuyó activamente durante años.
+    `,
+  },
+  {
+    slug: "articulo-redes-roberto-arias",
+    title: "Redes Comunitarias y el Programa Roberto Arias: una política pública pionera",
+    date: "2023-04-24",
+    dateDisplay: "24 abril, 2023",
+    author: "AlterMundi",
+    excerpt:
+      "Publicamos un análisis de la experiencia argentina de financiamiento de redes comunitarias a través del Fondo de Servicio Universal — la primera política pública de este tipo.",
+    tags: ["política pública", "Programa Roberto Arias", "ENACOM", "investigación"],
+    content: `
+Publicamos un artículo que documenta en profundidad la experiencia del **Programa Roberto Arias** — la primera política pública Argentina específicamente orientada a financiar redes comunitarias de Internet.
+
+## El Fondo de Servicio Universal
+
+El FFSU (Fondo Fiduciario de Servicio Universal) se alimenta del **1% de los ingresos** de los prestadores de telecomunicaciones. El Programa Roberto Arias asignó **300 millones de pesos** para proyectos en localidades de hasta **5.000 habitantes**.
+
+## Impacto del Semillero 2022
+
+El Semillero de Redes Comunitarias acompañó a **16 comunidades** en **9 provincias** a preparar sus proyectos — un hito sin precedentes en la conectividad rural argentina.
+    `,
+  },
+  // ─── 2022 ───
+  {
+    slug: "ieee-premio-semillero",
+    title: "IEEE reconoció con el primer premio al Semillero de Redes Comunitarias",
+    date: "2022-11-03",
+    dateDisplay: "3 noviembre, 2022",
+    author: "AlterMundi",
+    excerpt:
+      "El IEEE reconoció la experiencia del Semillero de Redes Comunitarias de AlterMundi como una de las iniciativas más destacadas en conectividad rural del año.",
+    tags: ["IEEE", "Semillero", "redes comunitarias", "reconocimiento"],
+    content: `
+¡Orgullo! El **IEEE** (Institute of Electrical and Electronics Engineers) reconoció al **Semillero de Redes Comunitarias** con el **primer premio** de su categoría.
+
+## El Semillero 2022
+
+El Semillero fue un proceso de formación y acompañamiento técnico-social que reunió a comunidades de toda Argentina, específicamente orientado a las postulantes al **Programa Roberto Arias de ENACOM**.
+
+- **16 comunidades** en **9 provincias** de Argentina
+- Talleres presenciales y virtuales durante varios meses
+- Herramientas de software libre: LibreMesh, LimeApp, LibreRouter
+- Acompañamiento en documentación técnica y administrativa
+
+## El modelo reconocido
+
+El reconocimiento del IEEE valida que el modelo de formación y acompañamiento de AlterMundi —centrado en la **autonomía comunitaria**, el **software libre** y la **apropiación tecnológica**— es una respuesta efectiva a los desafíos de conectividad en territorios rurales y remotos.
+    `,
+  },
+  {
+    slug: "battlemesh-v14-2022",
+    title: "AlterMundi en la Wireless BattleMesh v14, Roma",
+    date: "2022-09-22",
+    dateDisplay: "22 septiembre, 2022",
+    author: "AlterMundi",
+    excerpt:
+      "Participamos de la Wireless Battle of the Mesh v14 en Roma, compartiendo los últimos avances en LibreMesh y las experiencias de redes comunitarias en Argentina.",
+    tags: ["BattleMesh", "LibreMesh", "redes mesh", "internacional"],
+    content: `
+El equipo de AlterMundi viajó a **Roma** para participar de la **Wireless Battle of the Mesh v14** (BattleMesh), el encuentro de referencia internacional para activistas e investigadores de redes inalámbricas libres.
+
+## Qué presentamos
+
+Compartimos los avances técnicos más recientes de **LibreMesh**:
+- El nuevo protocolo APuP (Access Point Micro Peering)
+- Mejoras en el sistema de coordinación Shared State
+- Experiencias de despliegue comunitario en zonas rurales de Argentina
+
+## La comunidad global de redes mesh
+
+La BattleMesh conecta proyectos de todo el mundo: Freifunk (Alemania), ninux (Italia), Guifi.net (España), Village Telco (Sudáfrica). AlterMundi es una voz reconocida en este ecosistema global, especialmente por la perspectiva del **Sur Global**.
+    `,
+  },
+  {
+    slug: "semillero-roberto-arias-2022",
+    title: "Ya arrancamos con el Semillero de Redes Comunitarias para postulantes al Roberto Arias",
+    date: "2022-05-21",
+    dateDisplay: "21 mayo, 2022",
+    author: "AlterMundi",
+    excerpt:
+      "Lanzamos el Semillero de Redes Comunitarias 2022 para acompañar a comunidades que quieren postularse al Programa Roberto Arias de ENACOM.",
+    tags: ["Semillero", "Programa Roberto Arias", "formación", "ENACOM"],
+    content: `
+Lanzamos oficialmente el **Semillero de Redes Comunitarias 2022**, un proceso de acompañamiento integral para comunidades que desean postularse al **Programa Roberto Arias de ENACOM**.
+
+## ¿Qué es el Semillero?
+
+El Semillero ofrece:
+- **Formación técnica**: qué es una red mesh, cómo funciona LibreMesh y LimeApp, instalación y configuración de LibreRouter
+- **Formación organizacional**: aspectos legales, licencia VARC, RUPeCo
+- **Acompañamiento en la postulación**: preparación de la carpeta técnica y administrativa
+
+## Quiénes pueden participar
+
+Personas jurídicas sin fines de lucro que ya tengan o estén tramitando su **licencia VARC** ante ENACOM.
+
+El Programa Roberto Arias es la primera política pública nacional que financia redes comunitarias con el Fondo de Servicio Universal — y el Semillero existe para que las comunidades puedan acceder a ese financiamiento de manera autónoma.
+    `,
+  },
+  // ─── 2021 ───
+  {
+    slug: "primera-red-100-librerouter",
+    title: "AlterMundi y la primera red comunitaria de Internet 100% LibreRouter",
+    date: "2021-05-04",
+    dateDisplay: "4 mayo, 2021",
+    author: "AlterMundi",
+    excerpt:
+      "Las Calles, Córdoba: la Cooperativa de Trabajo Orgánica puso en marcha la primera red comunitaria argentina construida exclusivamente con equipos LibreRouter.",
+    tags: ["LibreRouter", "redes comunitarias", "Córdoba", "hitos"],
+    content: `
+Desde **Las Calles, Valle de Calamuchita, Córdoba**, llegó una noticia histórica: la **Cooperativa de Trabajo Orgánica (CTO)** puso en marcha la primera red comunitaria de Internet de Argentina construida **exclusivamente con equipos LibreRouter**.
+
+## Un proceso colectivo de formación y apropiación
+
+La red no llegó de un día para otro. Fue el resultado de meses de:
+- **Talleres de formación** con facilitación de AlterMundi
+- **Mapeo participativo** del territorio y análisis de puntos de montaje
+- **Planificación colaborativa** de la infraestructura
+- **Despliegue en comunidad**: la misma gente instaló los equipos con guía técnica
+
+## La tecnología
+
+El **LibreRouter** es hardware diseñado específicamente para redes comunitarias rurales:
+- Multi-radio (2.4 GHz + 5 GHz × 2) para enlaces de largo alcance
+- Para exteriores, resistente a la intemperie
+- LibreMesh preinstalado
+- Gestionable desde **LimeApp** sin conocimientos técnicos expertos
+
+## Por qué este hito importa
+
+Que una comunidad pueda construir, operar y mantener su propia red —sin depender de empresas ni técnicos externos— es exactamente el objetivo del trabajo de AlterMundi desde 2011.
+    `,
+  },
+  // ─── 2020 ───
+  {
+    slug: "nuevas-redes",
+    title: "10 nuevas redes comunitarias en Argentina",
+    date: "2020-09-29",
+    dateDisplay: "29 septiembre, 2020",
+    author: "AlterMundi",
+    excerpt:
+      "En plena pandemia, 10 nuevas redes comunitarias pusieron en marcha sus conexiones en diferentes provincias de Argentina, financiadas por APC e ISOC.",
+    tags: ["redes comunitarias", "pandemia", "APC", "ISOC", "LibreMesh"],
+    content: `
+Aún en el contexto de la **pandemia de COVID-19**, 2020 fue un año récord para las redes comunitarias en Argentina: **10 nuevas redes** pusieron en marcha sus conexiones en distintos puntos del país.
+
+## Las redes
+
+Entre las nuevas redes comunitarias:
+- **LibreGrandeNet** — Córdoba
+- **MonteNet** — Córdoba
+- **Río Los Sauces** — Córdoba
+- **GranjaLibre** — provincia de Buenos Aires
+- **MolinosComunitaria** — norte argentino
+- **ElValleReinicia** — noroeste
+- Y cuatro proyectos más en diferentes etapas de despliegue
+
+Cada una usa **LibreMesh** como firmware y **LibreRouter** como hardware, y es gestionada por la propia comunidad.
+
+## El financiamiento
+
+Este "semillero" fue posible gracias a **APC** (Association for Progressive Communications) e **ISOC** (Internet Society), que confiaron en el modelo de redes comunitarias impulsado por AlterMundi.
+
+## En pandemia, conectarse es un derecho
+
+La pandemia demostró de manera descarnada la importancia del acceso a internet para garantizar el derecho a la educación, el trabajo, la salud y la comunicación. Las redes comunitarias fueron una respuesta real, soberana y a escala humana a esta necesidad.
     `,
   },
 ];
